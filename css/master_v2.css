@@ -76,7 +76,8 @@ section {
   display: block;
   margin-bottom: 70px;
   overflow: hidden;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
 
 .sectionAlertOn {
   margin-bottom: 30px; }
@@ -377,6 +378,13 @@ i {
     position: absolute;
     margin-left: 0.3em; }
 
+.top_tempWrapWind {
+  width: 130px;
+  margin-right: 8px; }
+
+.top_tempWrapHumid {
+  margin-right: 12px; }
+
 .mid_content {
   position: relative;
   padding-left: 30px;
@@ -434,16 +442,16 @@ i {
         font-size: 0.75em;
         padding-bottom: 8px; }
         .mid_content .hourlyModule .hourlyModuleColor .hourlyWind span:last-child {
-          font-size: 30%;
+          font-size: 50%;
           opacity: 0.5;
           margin-left: 0.2em; }
 
 .graphWrap {
   position: absolute;
-  top: 435px;
+  top: 130px;
   left: 49px;
   width: 1822px;
-  height: 200px; }
+  height: 205px; }
 
 .bot_content {
   padding-left: 30px;
@@ -467,8 +475,7 @@ i {
       background-color: rgba(0, 0, 0, 0.2);
       height: 46px;
       width: 100%;
-      padding-top: 12px;
-      margin-bottom: 6px; }
+      padding-top: 12px; }
       .bot_content .dailyModule .dailyHi span, .bot_content .dailyModule .dailyLo span {
         font-size: 0.9em; }
 
