@@ -10,16 +10,18 @@
 		<div id="wrapperIn">
 			<section class="section_top">
 	<div class="top_content">
-		<div class="top_mod top_time">
-			00:00
+		<div class="top_mod top_time_wrap">
+			<div class="top_time top_mod_inner">
+				12:18
+			</div>
+			<div class="ampm  top_mod_inner">
+				<div class="am">AM</div>
+				<div class="pm ampmDeactive">PM</div>
+			</div>
 		</div>
 
-		<div class="top_mod ampm">
-			<div class="am">AM</div>
-			<div class="pm ampmDeactive">PM</div>
-		</div>
 		<div class="top_mod top_dateWrap">
-			<div class="top_day">Day</div>
+			<div class="top_day">Wednesday</div>
 			<div class="top_sub">
 				<span class="top_month">Month</span>
 				<span class="top_date">0</span>
@@ -32,26 +34,28 @@
 		</div>
 		<div class="top_mod top_tempWrap">
 			<h4>NOW</h4>
-			<span class="top_temp">0</span><span>&deg;</span>
+			<span class="top_temp">100</span><span>&deg;</span>
 		</div>
 		<div class="top_mod top_feelsWrap">
 			<h4>FEELS LIKE</h4>
-			<span class="top_feels">0</span><span>&deg;</span>
+			<span class="top_feels">100</span><span>&deg;</span>
 		</div>
 		<div class="top_mod top_tempWrap2 top_tempWrapWind">
 			<h4>WIND</h4>
-			<span class="top_wind">0</span><span>MPH</span>
+			<span class="top_wind">00</span><span>MPH</span>
 		</div>
 		<div class="top_mod top_tempWrap2 top_tempWrapHumid">
 			<h4>HUMID</h4>
-			<span class="top_humid">0</span><span>%</span>
+			<span class="top_humid">00</span><span>%</span>
 		</div>
-		<div class="top_mod top_tempWrap2">
+		<div class="top_mod top_tempWrap2 top_tempWrapPrecip">
 			<h4>PRECIP</h4>
-			<span class="top_precip">0</span><span>%</span>
+			<span class="top_precip">00</span><span>%</span>
 		</div>
 	</div>
-</section>			<section class="section_mid">
+</section>			
+
+<section class="section_mid">
 	<ul class="mid_content">
 		<li class="hourlyModule hourlyModule0">
 			<h4 class="hourlyHour">0</h4>
@@ -783,17 +787,25 @@
 		</li>
 
 	</ul>
-</section>			<section class="section_alert">
+</section>			
+
+<section class="section_alert">
 	<span> ... </span>
-</section>			<div class="systemStatus" id="tickerWrap">
+</section>			
+
+<div class="systemStatus" id="tickerWrap">
 	<span>Updated</span>
 	<span id="ticker">0 </span>
 	<span>minutes ago.</span>
-</div>		</div>
-	</div>
+</div>		
+
+</div>
+</div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel='stylesheet' href='css/reset.css'/>
 <link rel='stylesheet' href='css/weather-icons.css'/>
 <link rel='stylesheet' href='css/master_v2.css'/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-<script src="js/main-min.js"></script></body>
+<script src="js/main-min.js"></script>
+
+</body>

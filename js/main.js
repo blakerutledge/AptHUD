@@ -156,12 +156,7 @@ function writeCurrent(data) {
 	$('.top_icon').addClass(data.icon);
 	$('.top_temp').html(data.temp);
 	$('.top_feels').html(data.feelsLike);
-	if ( data.wind < 10 ) {
-		$('.top_wind').html("0"+data.wind);	
-	}
-	else {
-		$('.top_wind').html(data.wind);		
-	}
+	$('.top_wind').html(data.wind);		
 	$('.top_precip').html(data.precip);
 	$('.top_humid').html(data.humid);
 	$('#wrapperOut').css("background-color", data.tempColor)
@@ -272,16 +267,18 @@ function timeCheck() {
 	//time
 	date = new Date();
 	t = date.getHours();
-	if ( t>=12 ){
-		// t=t-12;
-		ampmBaby("pm");
-	}
 	if (t<12){
 		ampmBaby("am");
 	}
-	if (t==0){
-		t=12;
-		ampmBaby("am");
+	if ( t>=12 ){
+		ampmBaby("pm");
+	}
+
+	if (t==0) {
+		t = 12;
+	}
+	if ( t > 12 ) {
+		t = t -12;
 	}
 	tt = date.getMinutes();
 	if (tt<10){
