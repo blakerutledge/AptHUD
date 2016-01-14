@@ -317,7 +317,7 @@ i {
     position: relative; }
 
 .top_time_wrap {
-  width: 430px;
+  width: 450px;
   text-align: right; }
 
 .top_time {
@@ -325,8 +325,7 @@ i {
   letter-spacing: -0.02em;
   text-align: right;
   font-weight: 400;
-  margin-top: -0.08em;
-  margin-left: -25px; }
+  margin-top: -0.08em; }
 
 .ampm {
   font-size: 1.4em;
