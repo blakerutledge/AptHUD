@@ -267,7 +267,6 @@ function timeCheck() {
 	//time
 	date = new Date();
 	t = date.getHours();
-	t = 12;
 	if (t<12){
 		ampmBaby("am");
 	}
