@@ -1,0 +1,36 @@
+.bot_content
+	padding-left: 30px
+	padding-right: 30px
+	text-align: center
+	color: $hud-white
+
+	.dailyModule
+		display: inline-block
+		width: 80px
+		overflow: hidden
+		height: 420px
+		margin: auto
+
+		h4
+			width: 100%
+			font-size: .7em
+
+		.bot_iconOuter
+			height: 94px
+			width: 100%
+			font-size: 1.8em
+			@extend .weatherIconWrap
+
+			.bot_icon
+				@extend .weatherIcon
+
+		.dailyHi
+			background-color: rgba(0,0,0,.2)
+			height: 46px
+			width: 100%
+			padding-top: 12px
+			span
+				font-size: .9em
+
+		.dailyLo
+			@extend .dailyHi

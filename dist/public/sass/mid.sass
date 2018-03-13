@@ -1,0 +1,84 @@
+.mid_content
+	position: relative
+	padding-left: 30px
+	padding-right: 30px
+	text-align: center
+	color: $hud-white
+
+	.hourlyModule
+		display: inline-block
+		width: 76px
+		overflow: hidden
+		height: 430px
+		margin-left: -3px
+		margin-right: -3px
+
+		h4
+			height: 25px
+			text-align: center
+			width: 100%
+			font-size: .7em
+
+		.hourlyModuleColor
+			background-color: rgba(0,0,0,.2)
+			height: 393px
+
+			.mid_iconOuter
+				height: 74px
+				width: 100%
+				font-size: 1.5em
+				@extend .weatherIconWrap
+
+				.mid_icon
+					@extend .weatherIcon
+
+			.tempContainer
+				height: 220px
+				position: relative
+				font-size: .9em
+
+				.hourlyTempWrap
+					width: 100%
+					height: 20px
+					text-align: center
+					position: absolute
+					display: block
+					bottom: 0
+
+
+			.hourlyPrecip
+				font-size: .88em
+				margin-top: 13px
+				margin-bottom: 8px
+
+				span:last-child
+					font-size: 60%
+					opacity: 0.5
+					margin-left: 0.2em
+					letter-spacing: 0.1em
+
+			.hourlyHumid
+				font-size: .75em
+				margin-bottom: 8px
+
+				span:last-child
+					font-size: 60%
+					opacity: 0.5
+					margin-left: 0.2em
+					letter-spacing: 0.1em
+
+			.hourlyWind
+				font-size: .75em
+				padding-bottom: 8px
+
+				span:last-child
+					font-size: 50%
+					opacity: 0.5
+					margin-left: 0.2em
+
+.graphWrap
+	position: absolute
+	top: 128px
+	left: 49px
+	width: 1822px
+	height: 205px

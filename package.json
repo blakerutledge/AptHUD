@@ -1,0 +1,40 @@
+{
+  "name": "apthud.roundandround.tv",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "babel-node": "babel-node --presets=/*a*/ --ignore='foo|bar|baz'",
+    "watch": "nodemon --exec babel-node -- ./server/www.js",
+    "build": "npm run build:server",
+    "build:server": "babel server -d dist",
+    "build:frontend": "gulp build",
+    "start": "node dist/www.js",
+    "serve": "nohup forever start -a --uid 'apthud.roundandround.tv' dist/www.js",
+    "stop": "forever stop apthud.roundandround.tv",
+    "deploy": "npm run stop && npm run build && npm run serve"
+  },
+  "dependencies": {
+    "async": "*",
+    "babel-watch": "*",
+    "body-parser": "*",
+    "busboy": "*",
+    "compression": "*",
+    "cookie-parser": "*",
+    "cors": "*",
+    "debug": "*",
+    "express": "*",
+    "express-dot-engine": "*",
+    "forever": "*",
+    "http-auth": "*",
+    "morgan": "*",
+    "nedb": "*",
+    "nodemailer": "*",
+    "serve-favicon": "*",
+    "socket.io": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-preset-env": "*",
+    "nodemon": "*"
+  }
+}
