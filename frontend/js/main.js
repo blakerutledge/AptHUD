@@ -12,6 +12,9 @@ var dayInterval = 24 * 60 * 60000; //every 24 hours
 
 var colors = [ "#656869", "#616668", "#5D6466", "#596265", "#556063", "#505D62","#4E5C61", "#4C5B60", "#48595E", "#44575D", "#40555C", "#3B525A", "#375059", "#334E57", "#32505D", "#305262","#2F5568", "#2E576E", "#2C5973", "#2B5B79", "#2A5D7F", "#295F84", "#28628A", "#26648F", "#256694", "#24689A","#236AA0", "#216CA5", "#206FAB", "#1F71B1", "#1D73B6", "#1C75BC", "#1C7ABC", "#1C7FBC", "#1C84BC", "#1C89BC","#1C8EBC", "#1C93BC", "#2296B5", "#2999AE", "#2F9CA7", "#359EA0", "#3CA199", "#42A492", "#48A78B", "#4EAA84","#5BAF77", "#61B270", "#67B569", "#74BB5B", "#7ABE54", "#80C04D", "#87C346", "#8DC63F", "#91C840", "#96CA41","#9ACC43", "#9ECD44", "#A3CF45", "#A7D146", "#AAD046", "#ADCF46", "#B1CE46", "#B4CC45", "#B7CB45", "#BDC945","#C0C744", "#C6C544", "#C9C343", "#CFC143", "#D2C043", "#D6BF43", "#D9BD42", "#DFBB42", "#E4B942", "#E8B741","#EDB541", "#F2B441", "#F6B240", "#FBB040", "#F9AB3F", "#F7A63F", "#F5A23E", "#F39D3D", "#F1983D", "#EF933C","#ED8E3B", "#EB893B", "#E9843A", "#E78039", "#E57B39", "#E37638", "#E17137", "#DF6C37", "#DD6737", "#DA6236","#D85D36", "#D65835", "#D45334", "#D24E34" ];
 
+var days = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ]
+var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]
+
 var today = {
 	day: "",
 	month: "",
@@ -40,7 +43,7 @@ function dayModule( d, i, h, hc, l, lc, p ) {
 	this.day = d,
 	this.icon = i,
 	this.hi = h,
-	this.hiColor = hc,
+	this.hiColor = hc
 	this.lo = l,
 	this.loColor = lc,
 	this.precip = p
@@ -67,69 +70,79 @@ $( document ).ready(function() {
 		ticker();
 	}, timeInterval);
 	setInterval(function () {
-		//every 24 hours, refresh browser (pi memory bug)
+		//every 24 hours, refresh browser (pi memory weirdness)
 		window.location.reload(true);
 	}, dayInterval);
 });
 
+
+
 function weatherCheck() {
 	jQuery(document).ready(function($) {
+	 
+
+ 	  // Pre-fetched serverside
 	  $.ajax({
-	  	url : "https://api.wunderground.com/api/ad42a357677d6a01/hourly10day/q/NY/Williamsburg.json",
-	  	dataType : "jsonp",
-	  	success : function(parsed_json) {
-			
-			// GATHER INFO FOR TODAY MODULE
-			today.day = parsed_json.hourly_forecast[0].FCTTIME.weekday_name;
-			today.month = parsed_json.hourly_forecast[0].FCTTIME.month_name;
-			today.date = parsed_json.hourly_forecast[0].FCTTIME.mday_padded;
-			today.hour = parsed_json.hourly_forecast[0].FCTTIME.hour;
-			today.icon = "wi-wu-"+parsed_json.hourly_forecast[0].icon;
-			today.temp = parsed_json.hourly_forecast[0].temp.english;
+	  	url: "weather.json",
+	  	success : function(json) {
+
+	  		var data = JSON.parse( json )
+	  		// console.log( data )
+
+	  		// - - - CURRENT
+			var d = new Date()
+			var c = data.currently
+			today.day = days[ d.getDay() ]
+			today.month = months[ d.getMonth() ]
+			today.date = d.getDate()
+			today.hour = d.getHours()
+			today.icon = "wi-"+c.icon;
+			today.temp = Math.round( c.temperature );
 			today.tempColor = temp2color(today.temp);
-			today.feelsLike = parsed_json.hourly_forecast[0].feelslike.english;
-			today.wind = parsed_json.hourly_forecast[0].wspd.english;
-			today.precip = parsed_json.hourly_forecast[0].pop;
-			today.humid = parsed_json.hourly_forecast[0].humidity;
+			today.feelsLike = Math.round( c.apparentTemperature );
+			today.wind = Math.round( c.windSpeed );
+			today.precip = Math.round( 100 * c.precipProbability );
+			today.humid = Math.round( 100 * c.humidity );
 			writeCurrent(today);
 
-			//GATHER INFO FOR NEXT 24 HOURS
+			// - - - 24 HOURS
 			for(var i=0; i<24; i++) {
-				var h = parsed_json.hourly_forecast[i].FCTTIME.hour;
-				var ic = "wi-wu-"+parsed_json.hourly_forecast[i].icon;
-				var t = parsed_json.hourly_forecast[i].temp.english;
+				var x = data.hourly.data[i];
+				var d = new Date( x.time * 1000 );
+				var h = d.getHours();
+				var ic = "wi-"+x.icon;
+				var t = Math.round( x.temperature );
 				var tColor = temp2color(t);
-				var w = parsed_json.hourly_forecast[i].wspd.english;
-				var p = parsed_json.hourly_forecast[i].pop;
-				var hu = parsed_json.hourly_forecast[i].humidity;
-				hourForecast[i] = new hourModule(h, ic, t, tColor, w, p, hu);
+				var w = Math.round( x.windSpeed );
+				var p = Math.round( 100 * x.precipProbability );
+				var hu = Math.round( 100 * x.humidity );
+				hourForecast[i] = new hourModule(h, ic, t, tColor, w, p, hu );
 			};
-			//WRITE INFO FOR NEXT 24 HOURS
 			writeHourly(hourForecast);
-     	}
-	  });
 
-	  $.ajax({
-	  	url : "https://api.wunderground.com/api/ad42a357677d6a01/forecast10day/q/NY/Williamsburg.json",
-	  	dataType : "jsonp",
-	  	success : function(parsed_json) {
-			// GATHER INFO FOR 10 DAY FORECAST
-			for(var i=0; i<10; i++) {
-				var d = parsed_json.forecast.simpleforecast.forecastday[i].date.weekday_short[0];
-				var ic = "wi-wu-"+parsed_json.forecast.simpleforecast.forecastday[i].icon;
-				var h = parsed_json.forecast.simpleforecast.forecastday[i].high.fahrenheit;
+			// - - - 7 Day
+			let f = data.daily.data
+
+			for(var i=0; i<f.length; i++) {
+				var x = f[i];
+				var d = new Date( x.time * 1000 );
+				var dd = days[ d.getDay() ][0]
+				var ic = "wi-"+x.icon;
+				var h = Math.round( x.temperatureHigh );
 				var hc = temp2color(h);
-				var l = parsed_json.forecast.simpleforecast.forecastday[i].low.fahrenheit;
+				var l = Math.round( x.temperatureLow );
 				var lc = temp2color(l);
-				var p = parsed_json.forecast.simpleforecast.forecastday[i].pop;
-				dayForecast[i] = new dayModule(d, ic, h, hc, l, lc, p);
+				var p = Math.round( 100 * x.precipProbability );
+				dayForecast[i] = new dayModule( dd , ic, h, hc, l, lc, p );
 			};
-			//WRITE INFO FOR 10 DAY FORECAST
 			write10Day(dayForecast);
+
      	}
 	  });
+	  
 
-	  $.ajax({
+	  // Alert bar
+	  /*$.ajax({
 	  	url : "https://api.wunderground.com/api/ad42a357677d6a01/alerts/q/NY/Williamsburg.json",
 	  	dataType : "jsonp",
 	  	success : function(parsed_json) {
@@ -149,7 +162,8 @@ function weatherCheck() {
 	  			hideAlert(alert);
 	  		}	
      	} 
-	  });
+	  });*/
+	  
 	});
 };
 
@@ -205,7 +219,7 @@ function writeHourly(data) {
 }
 
 function write10Day(data) {
-	for(var i=0; i < 10; i++) {
+	for(var i=0; i < data.length; i++) {
 		$('.dailyModule'+i+' > h4').html(data[i].day);
 		$('.dailyModule'+i).find('.bot_icon').addClass(data[i].icon);
 		$('.dailyModule'+i).find('.dailyHi').html("<span>"+data[i].hi+"</span><span>&deg</span>");

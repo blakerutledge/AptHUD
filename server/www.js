@@ -1,27 +1,37 @@
 #!/usr/bin/env node
 
+let path = require('path')
 let app = require('./app')
 let debug = require('debug')('app:server')
 let http = require('http').createServer( app )
-let io = require('socket.io')(http)
+var io = require('socket.io')(http)
+var chokidar = require('chokidar')
+let config = require( path.join(__dirname, '..', 'config.json') )
 
-// Normalize a port into a number, string, or false.
-let normalizePort = ( val ) => {
-  let port = parseInt(val, 10)
-  if (isNaN(port)) {  return val }
-  if (port >= 0) {    return port }
-  return false
-}
+// Create HTTP server
+// Listen on provided port, on all network interfaces
+let env =  process.env.PWD.includes('production') ? 'production' : 'staging'
+console.log( 'Starting ' + env + ' server' )
 
-// Top-level error handler
-const onError = ( error ) => {
-  if (error.syscall !== 'listen') { throw error }
+let port = parseInt( config.port )
+app.set('port', port)
+http.listen(port)
+http.on('error', onError)
+http.on('listening', onListening)
 
+
+// Start application with SocketIO
+let socket = require('./socket').open(io)
+
+
+// Error starting server at specified port 
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error
+  }
   let bind = typeof port === 'string'
     ? 'Pipe ' + port
     : 'Port ' + port
-
-  // handle specific listen errors with friendly messages
   switch (error.code) {
     case 'EACCES':
       console.error(bind + ' requires elevated privileges')
@@ -36,20 +46,33 @@ const onError = ( error ) => {
   }
 }
 
-// Ready
-let onListening = () => {
+
+// Success, server is listening at specified port 
+function onListening() {
   let addr = http.address()
   let bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port
   console.log('Listening on ' + bind)
+  watchFrontend()
+
+  setTimeout( () => {
+    refreshFrontend()
+  }, 1000)
 }
 
-// READ port from config for portability
-let config = require('./../config.json')
-let port = normalizePort( config.port )
+function refreshFrontend() {
+  console.log('refresh frontend')
+  io.sockets.in('client').emit('refresh')
+}
 
-app.set('port', port)
-http.listen(port)
-http.on('error', onError)
-http.on('listening', onListening)
+let resizeTimer
+
+function watchFrontend() {
+  chokidar.watch( path.join(__dirname, '..', 'dist', 'public'), {ignored: /(^|[\/\\])\../}).on('all', (event, _path) => {
+      clearTimeout(resizeTimer)
+      resizeTimer = setTimeout( () => {
+        refreshFrontend()
+      }, 1000)
+  })
+}
