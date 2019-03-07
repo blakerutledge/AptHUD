@@ -75,7 +75,7 @@ $( document ).ready(function() {
 function weatherCheck() {
 	jQuery(document).ready(function($) {
 	  $.ajax({
-	  	url : "http://api.wunderground.com/api/ad42a357677d6a01/hourly10day/q/NY/Williamsburg.json",
+	  	url : "https://api.wunderground.com/api/ad42a357677d6a01/hourly10day/q/NY/Williamsburg.json",
 	  	dataType : "jsonp",
 	  	success : function(parsed_json) {
 			
@@ -85,9 +85,9 @@ function weatherCheck() {
 			today.date = parsed_json.hourly_forecast[0].FCTTIME.mday_padded;
 			today.hour = parsed_json.hourly_forecast[0].FCTTIME.hour;
 			today.icon = "wi-wu-"+parsed_json.hourly_forecast[0].icon;
-			today.temp = parsed_json.hourly_forecast[0].temp.english;
+			today.temp = Math.round( parsed_json.hourly_forecast[0].temp.english );
 			today.tempColor = temp2color(today.temp);
-			today.feelsLike = parsed_json.hourly_forecast[0].feelslike.english;
+			today.feelsLike = Math.round( parsed_json.hourly_forecast[0].feelslike.english );
 			today.wind = parsed_json.hourly_forecast[0].wspd.english;
 			today.precip = parsed_json.hourly_forecast[0].pop;
 			today.humid = parsed_json.hourly_forecast[0].humidity;
@@ -97,9 +97,9 @@ function weatherCheck() {
 			for(var i=0; i<24; i++) {
 				var h = parsed_json.hourly_forecast[i].FCTTIME.hour;
 				var ic = "wi-wu-"+parsed_json.hourly_forecast[i].icon;
-				var t = parsed_json.hourly_forecast[i].temp.english;
+				var t = Math.round( parsed_json.hourly_forecast[i].temp.english );
 				var tColor = temp2color(t);
-				var w = parsed_json.hourly_forecast[i].wspd.english;
+				var w = Math.round( parsed_json.hourly_forecast[i].wspd.english );
 				var p = parsed_json.hourly_forecast[i].pop;
 				var hu = parsed_json.hourly_forecast[i].humidity;
 				hourForecast[i] = new hourModule(h, ic, t, tColor, w, p, hu);
@@ -110,16 +110,16 @@ function weatherCheck() {
 	  });
 
 	  $.ajax({
-	  	url : "http://api.wunderground.com/api/ad42a357677d6a01/forecast10day/q/NY/Williamsburg.json",
+	  	url : "https://api.wunderground.com/api/ad42a357677d6a01/forecast10day/q/NY/Williamsburg.json",
 	  	dataType : "jsonp",
 	  	success : function(parsed_json) {
 			// GATHER INFO FOR 10 DAY FORECAST
 			for(var i=0; i<10; i++) {
 				var d = parsed_json.forecast.simpleforecast.forecastday[i].date.weekday_short[0];
 				var ic = "wi-wu-"+parsed_json.forecast.simpleforecast.forecastday[i].icon;
-				var h = parsed_json.forecast.simpleforecast.forecastday[i].high.fahrenheit;
+				var h = Math.round( parsed_json.forecast.simpleforecast.forecastday[i].high.fahrenheit );
 				var hc = temp2color(h);
-				var l = parsed_json.forecast.simpleforecast.forecastday[i].low.fahrenheit;
+				var l = Math.round( parsed_json.forecast.simpleforecast.forecastday[i].low.fahrenheit );
 				var lc = temp2color(l);
 				var p = parsed_json.forecast.simpleforecast.forecastday[i].pop;
 				dayForecast[i] = new dayModule(d, ic, h, hc, l, lc, p);
@@ -130,7 +130,7 @@ function weatherCheck() {
 	  });
 
 	  $.ajax({
-	  	url : "http://api.wunderground.com/api/ad42a357677d6a01/alerts/q/NY/Williamsburg.json",
+	  	url : "https://api.wunderground.com/api/ad42a357677d6a01/alerts/q/NY/Williamsburg.json",
 	  	dataType : "jsonp",
 	  	success : function(parsed_json) {
 	  		var a = "none";

@@ -75,7 +75,7 @@ $( document ).ready(function() {
 function weatherCheck() {
 	jQuery(document).ready(function($) {
 	  $.ajax({
-	  	url : "http://api.wunderground.com/api/ad42a357677d6a01/hourly10day/q/NY/Williamsburg.json",
+	  	url : "https://api.wunderground.com/api/ad42a357677d6a01/hourly10day/q/NY/Williamsburg.json",
 	  	dataType : "jsonp",
 	  	success : function(parsed_json) {
 			
@@ -110,7 +110,7 @@ function weatherCheck() {
 	  });
 
 	  $.ajax({
-	  	url : "http://api.wunderground.com/api/ad42a357677d6a01/forecast10day/q/NY/Williamsburg.json",
+	  	url : "https://api.wunderground.com/api/ad42a357677d6a01/forecast10day/q/NY/Williamsburg.json",
 	  	dataType : "jsonp",
 	  	success : function(parsed_json) {
 			// GATHER INFO FOR 10 DAY FORECAST
@@ -130,7 +130,7 @@ function weatherCheck() {
 	  });
 
 	  $.ajax({
-	  	url : "http://api.wunderground.com/api/ad42a357677d6a01/alerts/q/NY/Williamsburg.json",
+	  	url : "https://api.wunderground.com/api/ad42a357677d6a01/alerts/q/NY/Williamsburg.json",
 	  	dataType : "jsonp",
 	  	success : function(parsed_json) {
 	  		var a = "none";
