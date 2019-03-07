@@ -1,5 +1,6 @@
 var request = require('request')
 let jsonfile = require('jsonfile')
+let path = require('path')
 let fs = require('fs')
 
 let interval = undefined
@@ -22,9 +23,10 @@ let get_weather = () => {
 			console.log( error )
 		}
 		else {
-
-			fs.writeFile( 'public/weather.json', JSON.stringify( body ), 'utf8', () => {
-				// console.log('wrote weather...')
+			var _path = path.join( __dirname, '..', 'dist', 'public', 'weather.json' )
+			console.log( _path )
+			fs.writeFile( _path, JSON.stringify( body ), 'utf8', () => {
+				console.log('wrote weather...')
 			} )
 
 		}

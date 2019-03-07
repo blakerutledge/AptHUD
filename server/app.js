@@ -39,7 +39,7 @@ app.set('view engine', 'dot')
 app.use('/', index)
 
 // favicon
-// app.use(favicon(path.join(__dirname, '..', 'dist', 'public', 'favicon.ico')))
+app.use(favicon(path.join(__dirname, '..', 'dist', 'public', 'favicon.ico')))
 
 
 // Webhook debounced, wont fetch more than 1 every 3sec

@@ -83,19 +83,19 @@ function weatherCheck() {
 
  	  // Pre-fetched serverside
 	  $.ajax({
-	  	url: "weather.json",
+	  	url: "/weather.json?x=" + Math.random(),
 	  	success : function(json) {
 
-	  		var data = JSON.parse( json )
+	  		var data = JSON.parse( json );
 	  		// console.log( data )
 
 	  		// - - - CURRENT
-			var d = new Date()
-			var c = data.currently
-			today.day = days[ d.getDay() ]
-			today.month = months[ d.getMonth() ]
-			today.date = d.getDate()
-			today.hour = d.getHours()
+			var d = new Date();
+			var c = data.currently;
+			today.day = days[ d.getDay() ];
+			today.month = months[ d.getMonth() ];
+			today.date = d.getDate();
+			today.hour = d.getHours();
 			today.icon = "wi-"+c.icon;
 			today.temp = Math.round( c.temperature );
 			today.tempColor = temp2color(today.temp);
@@ -106,10 +106,19 @@ function weatherCheck() {
 			writeCurrent(today);
 
 			// - - - 24 HOURS
+			let offset = 0
 			for(var i=0; i<24; i++) {
 				var x = data.hourly.data[i];
-				var d = new Date( x.time * 1000 );
-				var h = d.getHours();
+				var dd = new Date( x.time * 1000 );
+				if ( dd.getHours() == d.getHours() ) {
+					offset = i
+				}
+				
+			}
+			for(var i=0; i<24; i++) {
+				var x = data.hourly.data[i+offset];
+				var dd = new Date( x.time * 1000 );
+				var h = dd.getHours();
 				var ic = "wi-"+x.icon;
 				var t = Math.round( x.temperature );
 				var tColor = temp2color(t);
@@ -121,12 +130,12 @@ function weatherCheck() {
 			writeHourly(hourForecast);
 
 			// - - - 7 Day
-			let f = data.daily.data
+			var f = data.daily.data;
 
 			for(var i=0; i<f.length; i++) {
 				var x = f[i];
 				var d = new Date( x.time * 1000 );
-				var dd = days[ d.getDay() ][0]
+				var dd = days[ d.getDay() ][0];
 				var ic = "wi-"+x.icon;
 				var h = Math.round( x.temperatureHigh );
 				var hc = temp2color(h);

@@ -6,8 +6,9 @@
     "dev": "open . & subl ./std.sublime-project & babel-watch ./server/www.js --presets es2015 & ttab gulp & /usr/bin/open -a '/Applications/Google Chrome.app' http://localhost:3000",
     "watch": "babel-watch ./server/www.js --presets es2015",
     "build": "babel server -d dist --presets es2015",
-    "serve": "forever start dist/www.js",
-    "stop": "forever stopall",
+    "start": "node dist/www.js",
+    "serve": "nohup forever start -a --uid 'apthud.roundandround.tv' dist/www.js",
+    "stop": "forever stop apthud.roundandround.tv",
     "test": "./node_modules/mocha/bin/mocha src/js/test/*"
   },
   "dependencies": {
