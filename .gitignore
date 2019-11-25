@@ -5,7 +5,7 @@
 **/*npm-debug.log
 **/*nohup.out
 
-**/*/.env
+.env
 
 dist/**/*
 data/**/*
