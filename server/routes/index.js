@@ -9,26 +9,19 @@ import cors from 'cors'
 import * as weather from './../components/weather'
 
 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  CONFIG router
+
+let router = express.Router()
+
+router.use( cors() )
+
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ROUTES
 
-export let router
+router.get( '/api/weather', ( req, res ) => {
+	weather.api.default( req, res )
+})
 
-export const build = () => {
-
-
-	router = express.Router()
-
-	router.use( cors )
-
-
-	router.post('/', function (req, res) {
-	  res.send('hello world')
-	})
-
-	router.post( '/api/weather', ( req, res ) => {
-		// weather.api.default( req, res )
-		res.send('hello world')
-	})
 
 
 /*
@@ -40,5 +33,4 @@ export const build = () => {
 */
 
 
-
-}
+export default router

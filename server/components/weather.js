@@ -40,7 +40,7 @@ let fetch_weather = () => {
 				var _path = path.join( __dirname, '..', '..', 'data', 'weather.json' )
 				fs.writeFile( _path, body, 'utf8', () => {
 					console.log( '💾  wrote weather data to disk' )
-					data = body
+					data = JSON.parse( body )
 				} )
 
 			}

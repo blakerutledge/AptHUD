@@ -37,7 +37,7 @@
     "cookie-parser": "*",
     "cors": "*",
     "dotenv": "^8.2.0",
-    "express": "*",
+    "express": "4.17.1",
     "express-dot-engine": "^1.0.8",
     "js-sha256": "^0.9.0",
     "jsonfile": "^5.0.0",

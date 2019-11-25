@@ -33,10 +33,7 @@ class controller:
 
 		# LOAD local content
 		op.content.Load()
-		op.presentations.Load()
-
-		# SYNC qith Crestron
-		op.dimmer.Query()
+		op.weather.Fetch()
 
 		# INIT screen recorder module
 		op.screen_recorder.op('./recorder').par.record = False
@@ -46,7 +43,7 @@ class controller:
 		op('/app/online_status').ext.triggers.Check()
 
 		# INIT socket
-		op.socket.Connect()
+		# op.socket.Connect()
 		
 		# INIT sequencer
 		# op.sequencer.Init()
@@ -58,9 +55,6 @@ class controller:
 
 
 	def FinishStartup( self ):
-		
-		if ( state.Get('APP_FETCHING_CONTENT') > 0 ):
-			return
 
 		self.RefreshSessionId()
 

@@ -16,7 +16,7 @@ debug.debug('app:server')
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  VALIDATE .env
 
 const valid = (
-			process.env.NODE_ENV 					!== undefined
+			process.env.ENV 						!== undefined
 	&&		process.env.PORT 						!== undefined
 	&&		process.env.DARKSKY_SECRET_KEY			!== undefined
 )
@@ -32,7 +32,7 @@ if ( !valid ) {
 // - - - - - - - - - - - - - - - - - - - - - - - - - Helpers and Event handlers
 
 // Normalize port to number helper
-const normalizePort = ( val ) => {
+const normalize_port = ( val ) => {
 	let port = parseInt(val, 10)
 	if (isNaN(port))						{ return val  }
 	if (port >= 0) 	 						{ return port }
@@ -40,7 +40,7 @@ const normalizePort = ( val ) => {
 }
 
 // Top-level error handler
-const onError = ( error ) => {
+const on_error = ( error ) => {
 	if ( error.code === 'EADDRINUSE' ) {
 		console.error( 'Port ' + port + ' is already in use' )
 		process.exit(1)
@@ -49,9 +49,9 @@ const onError = ( error ) => {
 }
 
 // Ready handler
-const onListening = () => {
+const on_listening = () => {
 	let p = process.env.PORT
-	console.log( '📡  ' + process.env.NODE_ENV + ' server listening on port ' + p )
+	console.log( '📡  ' + process.env.ENV + ' server listening on port ' + p )
 
 	controller.build( http_server )
 
@@ -61,10 +61,10 @@ const onListening = () => {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - BUILD server
 
-let port = normalizePort( process.env.PORT )
+let port = normalize_port( process.env.PORT )
 let http_server = http.createServer( app )
 
-http_server.on( 'listening', onListening )
-http_server.on( 'error', onError )
+http_server.on( 'listening', on_listening )
+http_server.on( 'error', on_error )
 http_server.listen( port )
 app.set( 'port', port )
