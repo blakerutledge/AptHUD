@@ -5,7 +5,8 @@
   </head>
   <body>
  
-    Hello world. You shouldnt be seeing this.
+    <h1> 	Hello world!	</h1>
+    <p> 	If you see this, something is misconfigured...	</p>
  
   </body>
 </html>

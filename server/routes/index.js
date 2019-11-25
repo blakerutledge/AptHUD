@@ -1,55 +1,42 @@
-const express = require('express')
-const contentful = require('contentful-management')
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  IMPORTS
+
+let express = require('express')
+
+let fs = require('fs')
+let path = require('path')
+let cors = require('cors')
+
+let app = require('./../app')
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  CONFIG router
+
 let router = express.Router()
-const cors = require('cors')
-const fs = require('fs')
-const path = require('path')
+router.use( cors() )
 
-let app = require('../app')
 
-// - - - Dev - - - //
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ROUTES
 
-// Route source maps
-router.get('/*', (req, res, next) => {
-
-  let filename = req.url.split('/').pop()
-  let extension = filename.split('.').pop()
-  let vendor = req.url.includes('vendor')
-
-  if ( ( extension === 'css' || extension === 'js' ) && !vendor )  {
-    res.setHeader('X-SourceMap', 'maps/' + filename + '.map')
-  }
-
-  return next()
+// Remove www & redirect
+router.get( '/*', ( req, res, next ) => {
+	if (req.headers.host.match(/^www/) !== null ) {
+		let new_url = req.headers.host.replace(/^www\./, '') + req.url
+		res.redirect('https://' + new_url )
+	}
+	else { next() }
 })
 
 
-// - - - Routes - - - //
-
-// Serve public
-router.get('/', (req, res, next) => {
-  res.status(200)
-  res.sendFile( path.join(__dirname, '..', '..', 'dist', 'public', 'index.html') )
-})
+/*
 
 
-// - - - Contenftul webhook - - - //
+	More routes here
 
-router.post('/contentful-webhook', (request, response) => {
 
-	console.log('POST contentful webhook')
-	app.handle_webhook()
-	
-})
+*/
 
 
 
-
-
-
-
-
-// etc
 
 
 

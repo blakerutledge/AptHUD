@@ -1,13 +1,11 @@
-**/*/.DS_Store
+**/.DS_Store
 **/node_modules/**/*
 
 **/*yarn-error.log
 **/*npm-debug.log
 **/*nohup.out
 
-dist/
-
-sites/**/*
-config/**/*
+dist/**/*
+data/**/*
 
 !**/*/.gitkeep
