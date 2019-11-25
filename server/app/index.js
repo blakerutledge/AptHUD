@@ -14,7 +14,7 @@ import jsonfile from 'jsonfile'
 
 import favicon from 'serve-favicon'
 
-import routes from './../routes/index'
+import * as routes from './../routes/index'
 
 import * as controller from './controller'
 
@@ -33,22 +33,23 @@ app.use( bodyParser.json( { limit: '10mb' } ) )
 app.use( bodyParser.urlencoded( { limit: '10mb', extended: false } ) )
 app.use( cookieParser() )
 
+// Routes
+routes.build()
+app.use( '/', routes.router )
+
 // DoT Views
-app.engine( 'dot', engine.__express )
-app.set( 'view engine', 'dot' )
-app.set( 'views', path.join( __dirname, '..', 'views' ) )
+// app.engine( 'dot', engine.__express )
+// app.set( 'view engine', 'dot' )
+// app.set( 'views', path.join( __dirname, '..', 'views' ) )
 
 // Favicon
-let favicon_path = path.join( __dirname, '..', '..', 'dist', 'public', 'favicon.ico' )
-if ( fs.existsSync( favicon_path ) ) {
-	app.use( favicon( favicon_path ) )
-}
-
-// Routes
-app.use( '/', routes )
+// let favicon_path = path.join( __dirname, '..', '..', 'dist', 'public', 'favicon.ico' )
+// if ( fs.existsSync( favicon_path ) ) {
+// 	app.use( favicon( favicon_path ) )
+// }
 
 // Static files
-app.use( express.static( path.join( __dirname, '..', '..', 'dist', 'public' ) ) )
+// app.use( express.static( path.join( __dirname, '..', '..', 'dist', 'public' ) ) )
 
 // Catch 404 error
 app.use( ( req, res, next ) => {

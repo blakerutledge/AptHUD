@@ -1,0 +1,49 @@
+{	
+
+	"SELECT": {
+		"PROMPT": "Select a Presentation",
+		"CANCEL": "Cancel",
+		"SELECT": "OK",
+		"EMPTY": "Error, no presentations loaded" 
+	},
+
+	"NAVIGATOR": {
+		"PROMPT": "Jump to:",
+		"RESET": "Reset Session",
+		"RESET_CONFIRM": "Are you sure?",
+		"NAG": "Next",
+		"EXPAND": "More"
+	},
+
+	"HEADLINES": {
+		"LANDSCAPE": "The landscape of data is growing \nexponentially more complex",
+		"ISSUES": "Let\u2019s identify some of the \nissues leading to complexity",
+		"SOLUTIONS": "Current systems handling \nthese issues are still complex",
+		"PLATFORM": "The platform abstracts \nthis complexity",
+		"CASE": "The platform in practice"
+	},
+
+	"PLATFORM": {
+		"AVAILABILITY": [
+			"Automatically syncs data no matter where it's located and speeds your access, ensuring performance, uptime, resilience and scalability.",
+			"For more than 2.5 decades we've helped keep some of the world's most mission-critical applications highly available.",
+			"Protects against configuration drive and avoids disruptive tests."
+		],
+		"PROTECTION": [
+			"NBU/NBU Appliances boast a recovery rate 5-7 times faster than the competition-rapid recovery when you need it most.",
+			"Protect your enterprise from the unforeseen and ensure your data is always secure, and compliant - no matter where it lives."
+		],
+		"INSIGHTS": [
+			"We are the trusted standard for SC/DR for 86% of the fortune 500 and have been for 20 years.",
+			"The continued survival of any industry will depend upon an agile, data-centric architecture that responds to the constant rate of change.",
+			"A proactive Data Management approach allows you to gain visibility into your data, storage and backup infrastructure."
+		]
+	},
+
+	"CASE": {
+		"CHALLENGES": "CHALLENGES",
+		"SOLUTIONS": "SOLUTIONS",
+		"OUTCOMES": "OUTCOMES"
+	}
+
+}

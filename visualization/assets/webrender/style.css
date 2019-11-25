@@ -1,0 +1,22 @@
+.wrapper {
+	background-color: blue;
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba( 0,0,0,0 );
+
+}
+
+
+.blurb {
+
+	font-family: 'sans';
+	font-weight: bold;
+	font-size: 4em;
+
+}

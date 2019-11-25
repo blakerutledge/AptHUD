@@ -5,6 +5,7 @@ import fs from 'fs'
 
 let interval = undefined
 
+export let data = {}
 
 export let build = () => {
 
@@ -18,15 +19,14 @@ export let build = () => {
 let fetch_weather = () => {
 
 
-	if ( process.env.LOCAL_CONTENT_ONLY == 1 ) {
+	if ( process.env.DEV_CONTENT_ONLY == 1 ) {
 
 		console.log( '🦄  Fallback to local dev content, not fetching live weather data' )
 
+		data = require('./../../visualization/assets/dev-content/weather.json')
+		
 	}
 	else {
-
-
-		let data = {}
 
 		console.log( '🌤  requesting current weather data' )
 
@@ -40,11 +40,31 @@ let fetch_weather = () => {
 				var _path = path.join( __dirname, '..', '..', 'data', 'weather.json' )
 				fs.writeFile( _path, body, 'utf8', () => {
 					console.log( '💾  wrote weather data to disk' )
+					data = body
 				} )
 
 			}
 
 		} )
+
+	}
+
+
+}
+
+
+export let api = {
+
+	default: ( req, res ) => {
+
+		if ( true ) {
+			res.status = 200
+			res.json( data )
+		}
+		else {
+			res.status = 401
+			res.json({ error: 'unauthorized weather content request' })
+		}
 
 	}
 
