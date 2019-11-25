@@ -1,13 +1,13 @@
-let fs = require('fs')
-let path = require('path')
+import fs from 'fs'
+import path from 'path'
 
-let state = require('./state').data
-let state_tasks = require('./state').tasks
+import { data as state } from './state'
+import { tasks as state_tasks } from './state'
 
-let sockets = require('./../components/sockets')
-let utils = require('./../components/utils')
+import * as sockets from './../components/sockets'
+import * as utils from './../components/utils'
 
-let weather = require('./../components/weather')
+import * as weather from './../components/weather'
 
 
 
@@ -16,7 +16,7 @@ let weather = require('./../components/weather')
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - EXPORTS
 
 // INIT on app startup
-exports.build = ( http_server ) => {
+export const build = ( http_server ) => {
 
 	console.log('✨  Building state')
 
@@ -36,7 +36,7 @@ exports.build = ( http_server ) => {
 }
 
 // HANDLER to report version number
-exports.get_version = () => {
+export const get_version = () => {
 	return process.env.VERSION
 }
 

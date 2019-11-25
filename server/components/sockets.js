@@ -1,7 +1,8 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  IMPORTS
 
-const socketio = require('socket.io')
-let controller = require('./../app/controller')
+import socketio from 'socket.io'
+
+import * as controller from './../app/controller'
 
 let io
 
@@ -9,7 +10,7 @@ let io
 
 // - - - - - - - - - - - - - - - - - - - - - - -  LISTEN FOR SOCKET CONNECTIONS
 
-exports.listen = ( http_server ) => {
+export let listen = ( http_server ) => {
 
 	io = socketio( http_server )
 

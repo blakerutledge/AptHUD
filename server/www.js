@@ -2,13 +2,15 @@
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  IMPORTS
 
-const dotenv = require('dotenv').config('./../.env')
-const debug = require('debug')('app:server')
-const http = require('http')
+import dotenv from 'dotenv'
+import debug from 'debug'
+import http from 'http'
 
-let app = require('./app/index')
-let controller = require('./app/controller')
+import app from './app/index'
+import * as controller from './app/controller'
 
+dotenv.config('./../.env')
+debug.debug('app:server')
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  VALIDATE .env

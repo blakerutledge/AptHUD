@@ -1,11 +1,11 @@
-let controller = require('./controller')
+import * as controller from './controller'
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - CURRENT STATE DATA
 
 // ONLY import this module when require-ing state
 
-exports.data = {
+export let data = {
 
 	meta: {
 		password: null
@@ -18,7 +18,7 @@ exports.data = {
 
 // ONLY import this module into the controller
 
-exports.tasks = {
+export const tasks = {
 
 	set_password: ( password_hash ) => {
 		exports.data.meta.password = password_hash

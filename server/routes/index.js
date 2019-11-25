@@ -1,18 +1,17 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  IMPORTS
 
-let express = require('express')
+import express from 'express'
 
-let fs = require('fs')
-let path = require('path')
-let cors = require('cors')
+import fs from 'fs'
+import path from 'path'
+import cors from 'cors'
 
-let app = require('./../app')
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  CONFIG router
 
 let router = express.Router()
-router.use( cors() )
+router.use( cors )
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ROUTES
@@ -27,6 +26,12 @@ router.get( '/*', ( req, res, next ) => {
 })
 
 
+
+
+router.post('/user/shows', ( req, res ) => {
+	// shows.api.shows( req, res )
+})
+
 /*
 
 
@@ -39,5 +44,4 @@ router.get( '/*', ( req, res, next ) => {
 
 
 
-
-module.exports = router
+export default router

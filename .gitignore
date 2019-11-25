@@ -7,6 +7,9 @@
 
 .env
 
+.sublime-project
+.sublime-project.sublime-workspace
+
 dist/**/*
 data/**/*
 

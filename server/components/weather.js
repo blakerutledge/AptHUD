@@ -1,12 +1,12 @@
-const jsonfile = require('jsonfile')
-const request = require('request')
-const path = require('path')
-const fs = require('fs')
+import jsonfile from 'jsonfile'
+import request from 'request'
+import path from 'path'
+import fs from 'fs'
 
 let interval = undefined
 
 
-exports.build = () => {
+export let build = () => {
 
 	interval = setInterval( fetch_weather, process.env.DARKSKY_FETCH_INTERVAL * 1000 )
 

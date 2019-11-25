@@ -1,22 +1,22 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  IMPORTS
 
-const express = 		require('express')
-const logger = 			require('morgan')
-const path = 			require('path')
-const fs = 				require('fs')
-const compression = 	require('compression')
-const cors = 			require('cors')
-const cookieParser = 	require('cookie-parser')
-const bodyParser = 		require('body-parser')
-const engine = 			require('express-dot-engine')
-const async	= 			require('async')
-const jsonfile = 		require('jsonfile')
+import express from 'express'
+import logger from 'morgan'
+import path from 'path'
+import fs from 'fs'
+import compression from 'compression'
+import cors from 'cors'
+import cookieParser from 'cookie-parser'
+import bodyParser from 'body-parser'
+import engine from 'express-dot-engine'
+import async	from 'async'
+import jsonfile from 'jsonfile'
 
-const favicon = 		require('serve-favicon')
+import favicon from 'serve-favicon'
 
-let routes = 			require('./../routes/index')
+import routes from './../routes/index'
 
-let controller = 		require('./controller')
+import * as controller from './controller'
 
 
 
@@ -89,4 +89,4 @@ init_project_folders()
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  EXPORTS
 
-module.exports = app
+export default app
