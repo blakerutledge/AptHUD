@@ -24,12 +24,21 @@ export let build = () => {
 let fetch_weather = () => {
 
 
-	if ( process.env.DEV_CONTENT_ONLY == 1 ) {
+	if ( process.env.SERVER_DEV_CONTENT_ONLY == 1 ) {
 
-		console.log( '🦄  Fallback to local dev content, not fetching live weather data' )
+		console.log( '🦄  Fallback to local weather content, not fetching live weather data' )
 
-		data = require('./../../visualization/assets/dev-content/weather.json')
-		
+		let body = require('./dev-weather.json')
+
+		let filtered = filter( body )
+
+		var _path = path.join( __dirname, '..', '..', 'data', 'weather.json' )
+
+		jsonfile.writeFile( _path, filtered, 'utf8', () => {
+			console.log( '💾  wrote weather data to disk' )
+			data = filtered
+		} )
+
 	}
 	else {
 
@@ -44,7 +53,8 @@ let fetch_weather = () => {
 				console.log( error )
 			}
 			else {
-				var _path = path.join( __dirname, '..', '..', 'data', 'weather.json' )
+				// var _path = path.join( __dirname, '..', '..', 'data', 'weather.json' )
+				var path = path.join( './../../visualization/assets/dev-content/weather.json' )
 				jsonfile.writeFile( _path, filtered, 'utf8', () => {
 					console.log( '💾  wrote weather data to disk' )
 					data = filtered
@@ -91,6 +101,7 @@ let filter_current = ( response ) => {
 	output.wind = 			Math.round( c.windSpeed )
 	output.precip = 		Math.round( 100 * c.precipProbability )
 	output.humid = 			Math.round( 100 * c.humidity )
+	output.descr = 			c.summary
 
 	return output
 
