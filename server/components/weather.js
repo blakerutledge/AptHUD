@@ -3,6 +3,9 @@ import request from 'request'
 import path from 'path'
 import fs from 'fs'
 
+import * as icons from './icons'
+
+
 let interval = undefined
 
 let days = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ]
@@ -82,7 +85,7 @@ let filter_current = ( response ) => {
 
 	var c = 				response.currently
 
-	output.icon = 			"wi-" + c.icon
+	output.icon = 			icons.convert( "wi-" + c.icon )
 	output.temp = 			Math.round( c.temperature )
 	output.feels_like = 	Math.round( c.apparentTemperature )
 	output.wind = 			Math.round( c.windSpeed )
@@ -116,7 +119,7 @@ let filter_hourly = ( response ) => {
 
 		output.push( {
 			hour: 		dd.getHours(),
-			icon: 		"wi-" + x.icon,
+			icon: 		icons.convert( "wi-" + x.icon ),
 			temp: 		Math.round( x.temperature ),
 			wind: 		Math.round( x.windSpeed ),
 			precip: 	Math.round( 100 * x.precipProbability ),
@@ -139,7 +142,7 @@ let filter_forecast = (response ) => {
 
 		output.push( {
 			day: 		days[ d.getDay() ][ 0 ],
-			icon: 		"wi-" + x.icon,
+			icon: 		icons.convert( "wi-" + x.icon ),
 			hi: 		Math.round( x.temperatureHigh ),
 			lo: 		Math.round( x.temperatureLow ),
 			precip: 	Math.round( 100 * x.precipProbability ),

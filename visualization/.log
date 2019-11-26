@@ -1476,3 +1476,307 @@
 19-11-26 04:31:02 || Weather: Begin Fetch process
 19-11-26 04:31:02 || Weather: Clearing Temp Assets directory
 19-11-26 04:31:02 || Weather: Fetching latest content from backend
+19-11-26 05:28:02 || Weather: Reload
+19-11-26 05:28:06 || Weather: Begin Fetch process
+19-11-26 05:28:06 || Weather: Clearing Temp Assets directory
+19-11-26 05:28:06 || Weather: Fetching latest content from backend
+19-11-26 05:28:06 || Weather: Writing JSON content to disk
+19-11-26 05:28:06 || Weather: Reload
+19-11-26 05:29:03 || Weather: Begin Fetch process
+19-11-26 05:29:03 || Weather: Clearing Temp Assets directory
+19-11-26 05:29:03 || Weather: Fetching latest content from backend
+19-11-26 05:29:03 || Weather: Writing JSON content to disk
+19-11-26 05:29:03 || Weather: Reload
+19-11-26 05:30:00 || Weather: Begin Fetch process
+19-11-26 05:30:00 || Weather: Clearing Temp Assets directory
+19-11-26 05:30:00 || Weather: Fetching latest content from backend
+19-11-26 05:30:00 || Weather: Writing JSON content to disk
+19-11-26 05:30:00 || Weather: Reload
+19-11-26 05:30:57 || Weather: Begin Fetch process
+19-11-26 05:30:57 || Weather: Clearing Temp Assets directory
+19-11-26 05:30:57 || Weather: Fetching latest content from backend
+19-11-26 05:30:57 || Weather: Writing JSON content to disk
+19-11-26 05:30:57 || Weather: Reload
+19-11-26 05:31:54 || Weather: Begin Fetch process
+19-11-26 05:31:54 || Weather: Clearing Temp Assets directory
+19-11-26 05:31:54 || Weather: Fetching latest content from backend
+19-11-26 05:31:54 || Weather: Writing JSON content to disk
+19-11-26 05:31:54 || Weather: Reload
+19-11-26 05:32:51 || Weather: Begin Fetch process
+19-11-26 05:32:51 || Weather: Clearing Temp Assets directory
+19-11-26 05:32:51 || Weather: Fetching latest content from backend
+19-11-26 05:41:39 || Weather: Reload
+19-11-26 05:41:42 || Weather: Begin Fetch process
+19-11-26 05:41:42 || Weather: Clearing Temp Assets directory
+19-11-26 05:41:42 || Weather: Fetching latest content from backend
+19-11-26 05:41:42 || Weather: Writing JSON content to disk
+19-11-26 05:41:42 || Weather: Reload
+19-11-26 05:42:39 || Weather: Begin Fetch process
+19-11-26 05:42:39 || Weather: Clearing Temp Assets directory
+19-11-26 05:42:39 || Weather: Fetching latest content from backend
+19-11-26 05:50:27 || Weather: Begin Fetch process
+19-11-26 05:50:27 || Weather: Clearing Temp Assets directory
+19-11-26 05:50:27 || Weather: Fetching latest content from backend
+19-11-26 05:50:28 || Weather: Writing JSON content to disk
+19-11-26 05:50:28 || Weather: Reload
+19-11-26 05:51:25 || Weather: Begin Fetch process
+19-11-26 05:51:25 || Weather: Clearing Temp Assets directory
+19-11-26 05:51:25 || Weather: Fetching latest content from backend
+19-11-26 05:56:39 || Weather: Begin Fetch process
+19-11-26 05:56:39 || Weather: Clearing Temp Assets directory
+19-11-26 05:56:39 || Weather: Fetching latest content from backend
+19-11-26 05:56:39 || Weather: Writing JSON content to disk
+19-11-26 05:56:39 || Weather: Reload
+19-11-26 05:57:36 || Weather: Begin Fetch process
+19-11-26 05:57:36 || Weather: Clearing Temp Assets directory
+19-11-26 05:57:36 || Weather: Fetching latest content from backend
+19-11-26 05:57:36 || Weather: Writing JSON content to disk
+19-11-26 05:57:36 || Weather: Reload
+19-11-26 05:58:33 || Weather: Begin Fetch process
+19-11-26 05:58:33 || Weather: Clearing Temp Assets directory
+19-11-26 05:58:33 || Weather: Fetching latest content from backend
+19-11-26 05:58:33 || Weather: Writing JSON content to disk
+19-11-26 05:58:33 || Weather: Reload
+19-11-26 05:59:30 || Weather: Begin Fetch process
+19-11-26 05:59:30 || Weather: Clearing Temp Assets directory
+19-11-26 05:59:30 || Weather: Fetching latest content from backend
+19-11-26 05:59:30 || Weather: Writing JSON content to disk
+19-11-26 05:59:30 || Weather: Reload
+19-11-26 06:00:27 || Weather: Begin Fetch process
+19-11-26 06:00:27 || Weather: Clearing Temp Assets directory
+19-11-26 06:00:27 || Weather: Fetching latest content from backend
+19-11-26 06:00:27 || Weather: Writing JSON content to disk
+19-11-26 06:00:27 || Weather: Reload
+19-11-26 06:01:24 || Weather: Begin Fetch process
+19-11-26 06:01:24 || Weather: Clearing Temp Assets directory
+19-11-26 06:01:24 || Weather: Fetching latest content from backend
+19-11-26 06:01:24 || Weather: Writing JSON content to disk
+19-11-26 06:01:24 || Weather: Reload
+19-11-26 06:02:21 || Weather: Begin Fetch process
+19-11-26 06:02:21 || Weather: Clearing Temp Assets directory
+19-11-26 06:02:21 || Weather: Fetching latest content from backend
+19-11-26 06:02:21 || Weather: Writing JSON content to disk
+19-11-26 06:02:21 || Weather: Reload
+19-11-26 06:03:18 || Weather: Begin Fetch process
+19-11-26 06:03:18 || Weather: Clearing Temp Assets directory
+19-11-26 06:03:18 || Weather: Fetching latest content from backend
+19-11-26 06:03:18 || Weather: Writing JSON content to disk
+19-11-26 06:03:18 || Weather: Reload
+19-11-26 06:04:15 || Weather: Begin Fetch process
+19-11-26 06:04:15 || Weather: Clearing Temp Assets directory
+19-11-26 06:04:15 || Weather: Fetching latest content from backend
+19-11-26 06:04:15 || Weather: Writing JSON content to disk
+19-11-26 06:04:15 || Weather: Reload
+19-11-26 06:05:12 || Weather: Begin Fetch process
+19-11-26 06:05:12 || Weather: Clearing Temp Assets directory
+19-11-26 06:05:12 || Weather: Fetching latest content from backend
+19-11-26 06:05:12 || Weather: Writing JSON content to disk
+19-11-26 06:05:12 || Weather: Reload
+19-11-26 06:06:09 || Weather: Begin Fetch process
+19-11-26 06:06:09 || Weather: Clearing Temp Assets directory
+19-11-26 06:06:09 || Weather: Fetching latest content from backend
+19-11-26 06:06:09 || Weather: Writing JSON content to disk
+19-11-26 06:06:09 || Weather: Reload
+19-11-26 06:07:06 || Weather: Begin Fetch process
+19-11-26 06:07:06 || Weather: Clearing Temp Assets directory
+19-11-26 06:07:06 || Weather: Fetching latest content from backend
+19-11-26 06:07:06 || Weather: Writing JSON content to disk
+19-11-26 06:07:06 || Weather: Reload
+19-11-26 06:08:03 || Weather: Begin Fetch process
+19-11-26 06:08:03 || Weather: Clearing Temp Assets directory
+19-11-26 06:08:03 || Weather: Fetching latest content from backend
+19-11-26 06:08:03 || Weather: Writing JSON content to disk
+19-11-26 06:08:03 || Weather: Reload
+19-11-26 06:09:00 || Weather: Begin Fetch process
+19-11-26 06:09:00 || Weather: Clearing Temp Assets directory
+19-11-26 06:09:00 || Weather: Fetching latest content from backend
+19-11-26 06:09:00 || Weather: Writing JSON content to disk
+19-11-26 06:09:00 || Weather: Reload
+19-11-26 06:09:57 || Weather: Begin Fetch process
+19-11-26 06:09:57 || Weather: Clearing Temp Assets directory
+19-11-26 06:09:57 || Weather: Fetching latest content from backend
+19-11-26 06:09:57 || Weather: Writing JSON content to disk
+19-11-26 06:09:57 || Weather: Reload
+19-11-26 06:10:54 || Weather: Begin Fetch process
+19-11-26 06:10:54 || Weather: Clearing Temp Assets directory
+19-11-26 06:10:54 || Weather: Fetching latest content from backend
+19-11-26 06:10:54 || Weather: Writing JSON content to disk
+19-11-26 06:10:54 || Weather: Reload
+19-11-26 06:11:51 || Weather: Begin Fetch process
+19-11-26 06:11:51 || Weather: Clearing Temp Assets directory
+19-11-26 06:11:51 || Weather: Fetching latest content from backend
+19-11-26 06:11:51 || Weather: Writing JSON content to disk
+19-11-26 06:11:51 || Weather: Reload
+19-11-26 06:12:48 || Weather: Begin Fetch process
+19-11-26 06:12:48 || Weather: Clearing Temp Assets directory
+19-11-26 06:12:48 || Weather: Fetching latest content from backend
+19-11-26 06:12:48 || Weather: Writing JSON content to disk
+19-11-26 06:12:48 || Weather: Reload
+19-11-26 06:13:45 || Weather: Begin Fetch process
+19-11-26 06:13:45 || Weather: Clearing Temp Assets directory
+19-11-26 06:13:45 || Weather: Fetching latest content from backend
+19-11-26 06:13:45 || Weather: Writing JSON content to disk
+19-11-26 06:13:45 || Weather: Reload
+19-11-26 06:14:42 || Weather: Begin Fetch process
+19-11-26 06:14:42 || Weather: Clearing Temp Assets directory
+19-11-26 06:14:42 || Weather: Fetching latest content from backend
+19-11-26 06:14:42 || Weather: Writing JSON content to disk
+19-11-26 06:14:42 || Weather: Reload
+19-11-26 06:15:39 || Weather: Begin Fetch process
+19-11-26 06:15:39 || Weather: Clearing Temp Assets directory
+19-11-26 06:15:39 || Weather: Fetching latest content from backend
+19-11-26 06:15:40 || Weather: Writing JSON content to disk
+19-11-26 06:15:40 || Weather: Reload
+19-11-26 06:15:41 || Weather: Reload
+19-11-26 06:16:05 || Weather: Reload
+19-11-26 06:16:36 || Weather: Begin Fetch process
+19-11-26 06:16:36 || Weather: Clearing Temp Assets directory
+19-11-26 06:16:36 || Weather: Fetching latest content from backend
+19-11-26 06:17:05 || Weather: Reload
+19-11-26 06:17:19 || Weather: Reload
+19-11-26 06:18:24 || Weather: Reload
+19-11-26 06:18:37 || Weather: Reload
+19-11-26 06:19:11 || Weather: Reload
+19-11-26 06:21:07 || Weather: Begin Fetch process
+19-11-26 06:21:07 || Weather: Clearing Temp Assets directory
+19-11-26 06:21:07 || Weather: Fetching latest content from backend
+19-11-26 06:21:08 || Weather: Writing JSON content to disk
+19-11-26 06:21:08 || Weather: Reload
+19-11-26 06:21:15 || Weather: Reload
+19-11-26 06:21:16 || Weather: Reload
+19-11-26 06:21:17 || Weather: Begin Fetch process
+19-11-26 06:21:17 || Weather: Clearing Temp Assets directory
+19-11-26 06:21:17 || Weather: Fetching latest content from backend
+19-11-26 06:21:17 || Weather: Writing JSON content to disk
+19-11-26 06:21:17 || Weather: Reload
+19-11-26 06:21:33 || Weather: Reload
+19-11-26 06:22:14 || Weather: Begin Fetch process
+19-11-26 06:22:14 || Weather: Clearing Temp Assets directory
+19-11-26 06:22:14 || Weather: Fetching latest content from backend
+19-11-26 06:22:14 || Weather: Writing JSON content to disk
+19-11-26 06:22:14 || Weather: Reload
+19-11-26 06:23:11 || Weather: Begin Fetch process
+19-11-26 06:23:11 || Weather: Clearing Temp Assets directory
+19-11-26 06:23:11 || Weather: Fetching latest content from backend
+19-11-26 06:23:11 || Weather: Writing JSON content to disk
+19-11-26 06:23:11 || Weather: Reload
+19-11-26 06:23:50 || Weather: Reload
+19-11-26 06:23:52 || Weather: Begin Fetch process
+19-11-26 06:23:52 || Weather: Clearing Temp Assets directory
+19-11-26 06:23:52 || Weather: Fetching latest content from backend
+19-11-26 06:23:52 || Weather: Writing JSON content to disk
+19-11-26 06:23:52 || Weather: Reload
+19-11-26 06:23:54 || Weather: Reload
+19-11-26 06:24:09 || Weather: Reload
+19-11-26 06:24:10 || Weather: Begin Fetch process
+19-11-26 06:24:10 || Weather: Clearing Temp Assets directory
+19-11-26 06:24:10 || Weather: Fetching latest content from backend
+19-11-26 06:24:10 || Weather: Writing JSON content to disk
+19-11-26 06:24:10 || Weather: Reload
+19-11-26 06:24:44 || Weather: Reload
+19-11-26 06:24:52 || Weather: Reload
+19-11-26 06:24:54 || Weather: Begin Fetch process
+19-11-26 06:24:54 || Weather: Clearing Temp Assets directory
+19-11-26 06:24:54 || Weather: Fetching latest content from backend
+19-11-26 06:24:54 || Weather: Writing JSON content to disk
+19-11-26 06:24:54 || Weather: Reload
+19-11-26 06:25:51 || Weather: Begin Fetch process
+19-11-26 06:25:51 || Weather: Clearing Temp Assets directory
+19-11-26 06:25:51 || Weather: Fetching latest content from backend
+19-11-26 06:25:51 || Weather: Writing JSON content to disk
+19-11-26 06:25:51 || Weather: Reload
+19-11-26 06:26:48 || Weather: Begin Fetch process
+19-11-26 06:26:48 || Weather: Clearing Temp Assets directory
+19-11-26 06:26:48 || Weather: Fetching latest content from backend
+19-11-26 06:26:48 || Weather: Writing JSON content to disk
+19-11-26 06:26:48 || Weather: Reload
+19-11-26 06:27:45 || Weather: Begin Fetch process
+19-11-26 06:27:45 || Weather: Clearing Temp Assets directory
+19-11-26 06:27:45 || Weather: Fetching latest content from backend
+19-11-26 06:27:45 || Weather: Writing JSON content to disk
+19-11-26 06:27:45 || Weather: Reload
+19-11-26 06:28:31 || Weather: Reload
+19-11-26 06:28:42 || Weather: Begin Fetch process
+19-11-26 06:28:42 || Weather: Clearing Temp Assets directory
+19-11-26 06:28:42 || Weather: Fetching latest content from backend
+19-11-26 06:28:42 || Weather: Writing JSON content to disk
+19-11-26 06:28:42 || Weather: Reload
+19-11-26 06:29:20 || Weather: Begin Fetch process
+19-11-26 06:29:20 || Weather: Clearing Temp Assets directory
+19-11-26 06:29:20 || Weather: Fetching latest content from backend
+19-11-26 06:29:20 || Weather: Writing JSON content to disk
+19-11-26 06:29:20 || Weather: Reload
+19-11-26 06:30:18 || Weather: Begin Fetch process
+19-11-26 06:30:18 || Weather: Clearing Temp Assets directory
+19-11-26 06:30:18 || Weather: Fetching latest content from backend
+19-11-26 06:30:18 || Weather: Writing JSON content to disk
+19-11-26 06:30:18 || Weather: Reload
+19-11-26 06:30:18 || Weather: Reload
+19-11-26 06:31:15 || Weather: Begin Fetch process
+19-11-26 06:31:15 || Weather: Clearing Temp Assets directory
+19-11-26 06:31:15 || Weather: Fetching latest content from backend
+19-11-26 06:31:15 || Weather: Writing JSON content to disk
+19-11-26 06:31:15 || Weather: Reload
+19-11-26 06:32:12 || Weather: Begin Fetch process
+19-11-26 06:32:12 || Weather: Clearing Temp Assets directory
+19-11-26 06:32:12 || Weather: Fetching latest content from backend
+19-11-26 06:32:12 || Weather: Writing JSON content to disk
+19-11-26 06:32:12 || Weather: Reload
+19-11-26 06:33:10 || Weather: Begin Fetch process
+19-11-26 06:33:10 || Weather: Clearing Temp Assets directory
+19-11-26 06:33:10 || Weather: Fetching latest content from backend
+19-11-26 06:33:10 || Weather: Writing JSON content to disk
+19-11-26 06:33:10 || Weather: Reload
+19-11-26 06:33:49 || App starting up...
+19-11-26 06:33:49 || Content: Reload
+19-11-26 06:33:49 || Weather: Begin Fetch process
+19-11-26 06:33:49 || Weather: Clearing Temp Assets directory
+19-11-26 06:33:49 || Weather: Fetching latest content from backend
+19-11-26 06:33:49 || Weather: Writing JSON content to disk
+19-11-26 06:33:49 || Weather: Reload
+19-11-26 06:33:51 || GLSL: Create Defines
+19-11-26 06:33:59 || App started up
+19-11-26 06:35:09 || App starting up...
+19-11-26 06:35:09 || Content: Reload
+19-11-26 06:35:09 || Weather: Begin Fetch process
+19-11-26 06:35:09 || Weather: Clearing Temp Assets directory
+19-11-26 06:35:09 || Weather: Fetching latest content from backend
+19-11-26 06:35:10 || GLSL: Create Defines
+19-11-26 06:35:18 || App started up
+19-11-26 06:41:05 || Weather: Begin Fetch process
+19-11-26 06:41:05 || Weather: Clearing Temp Assets directory
+19-11-26 06:41:05 || Weather: Fetching latest content from backend
+19-11-26 06:41:05 || Weather: Writing JSON content to disk
+19-11-26 06:41:05 || Weather: Reload
+19-11-26 06:41:41 || Weather: Begin Fetch process
+19-11-26 06:41:41 || Weather: Clearing Temp Assets directory
+19-11-26 06:41:41 || Weather: Fetching latest content from backend
+19-11-26 06:41:41 || Weather: Writing JSON content to disk
+19-11-26 06:41:41 || Weather: Reload
+19-11-26 06:41:53 || Weather: Begin Fetch process
+19-11-26 06:41:53 || Weather: Clearing Temp Assets directory
+19-11-26 06:41:53 || Weather: Fetching latest content from backend
+19-11-26 06:41:55 || Weather: Begin Fetch process
+19-11-26 06:41:55 || Weather: Clearing Temp Assets directory
+19-11-26 06:41:55 || Weather: Fetching latest content from backend
+19-11-26 06:41:55 || Weather: Writing JSON content to disk
+19-11-26 06:41:55 || Weather: Reload
+19-11-26 06:42:53 || Weather: Begin Fetch process
+19-11-26 06:42:53 || Weather: Clearing Temp Assets directory
+19-11-26 06:42:53 || Weather: Fetching latest content from backend
+19-11-26 06:42:53 || Weather: Writing JSON content to disk
+19-11-26 06:42:53 || Weather: Reload
+19-11-26 06:43:07 || Weather: Begin Fetch process
+19-11-26 06:43:07 || Weather: Clearing Temp Assets directory
+19-11-26 06:43:07 || Weather: Fetching latest content from backend
+19-11-26 06:43:08 || Weather: Begin Fetch process
+19-11-26 06:43:08 || Weather: Clearing Temp Assets directory
+19-11-26 06:43:08 || Weather: Fetching latest content from backend
+19-11-26 06:43:08 || Weather: Writing JSON content to disk
+19-11-26 06:43:08 || Weather: Reload
+19-11-26 06:43:09 || Weather: Begin Fetch process
+19-11-26 06:43:09 || Weather: Clearing Temp Assets directory
+19-11-26 06:43:09 || Weather: Fetching latest content from backend
+19-11-26 07:06:57 || Weather: Reload
+19-11-26 07:07:04 || Weather: Reload
+19-11-26 07:07:06 || Weather: Skipping content fetch in favor of local Dev Content as specified by .env file
