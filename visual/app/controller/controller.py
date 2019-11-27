@@ -64,7 +64,6 @@ class controller:
 
 		# op.analytics.Emit( 'APP_STARTED_UP' )
 		
-		run( "op.state.Set( 'APP_STARTING_UP_NONASSETS', 0 )", delayFrames=1 )
 		run( "op.state.Set( 'APP_STARTING_UP', 0 )", delayFrames=1 )
 
 		run( "op.console.State( 'App started up' )", delayFrames=2 )
