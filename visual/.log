@@ -2365,3 +2365,221 @@
 19-11-28 16:51:25 || Sequencer: to scene FORECAST
 19-11-28 16:51:25 || Sequencer: to scene LIGHTS
 19-11-28 16:55:23 || Internet connection acquired
+19-11-28 16:58:20 || Sequencer: to scene FORECAST
+19-11-28 16:58:21 || Sequencer: to scene LIGHTS
+19-11-28 17:00:48 || Sequencer: to scene FORECAST
+19-11-28 17:00:50 || Sequencer: to scene LIGHTS
+19-11-28 17:00:52 || Sequencer: to scene FORECAST
+19-11-28 17:00:53 || Sequencer: to scene LIGHTS
+19-11-28 17:01:12 || Sequencer: to scene FORECAST
+19-11-28 17:01:13 || Sequencer: to scene LIGHTS
+19-11-28 17:01:15 || Sequencer: to scene FORECAST
+19-11-28 17:01:44 || Sequencer: to scene CURRENT
+19-11-28 17:01:45 || Sequencer: to scene FORECAST
+19-11-28 17:01:46 || Sequencer: to scene CURRENT
+19-11-28 17:01:47 || Sequencer: to scene FORECAST
+19-11-28 17:01:48 || Sequencer: to scene CURRENT
+19-11-28 17:01:49 || Sequencer: to scene FORECAST
+19-11-28 17:03:02 || Sequencer: to scene CURRENT
+19-11-28 17:03:05 || Sequencer: to scene FORECAST
+19-11-28 17:03:06 || Sequencer: to scene CURRENT
+19-11-28 17:03:07 || Sequencer: to scene FORECAST
+19-11-28 17:03:51 || Sequencer: to scene CURRENT
+19-11-28 17:03:52 || Sequencer: to scene FORECAST
+19-11-28 17:03:53 || Sequencer: to scene CURRENT
+19-11-28 17:03:54 || Sequencer: to scene FORECAST
+19-11-28 17:03:57 || Sequencer: to scene CURRENT
+19-11-28 17:03:59 || Sequencer: to scene FORECAST
+19-11-28 17:04:00 || Sequencer: Blocked transition to until current transition resolves
+19-11-28 17:04:00 || Sequencer: to scene CURRENT
+19-11-28 17:04:02 || Sequencer: to scene FORECAST
+19-11-28 17:04:04 || Sequencer: to scene CURRENT
+19-11-28 17:04:08 || Sequencer: to scene FORECAST
+19-11-28 17:04:14 || Sequencer: to scene CURRENT
+19-11-28 17:04:15 || Sequencer: to scene FORECAST
+19-11-28 17:04:16 || Sequencer: to scene CURRENT
+19-11-28 17:04:17 || Sequencer: to scene FORECAST
+19-11-28 17:04:18 || Sequencer: to scene CURRENT
+19-11-28 17:04:46 || Sequencer: to scene FORECAST
+19-11-28 17:04:47 || Sequencer: Blocked transition to until current transition resolves
+19-11-28 17:04:48 || Sequencer: to scene CURRENT
+19-11-28 17:04:49 || Sequencer: to scene FORECAST
+19-11-28 17:06:22 || Sequencer: to scene LIGHTS
+19-11-28 17:06:23 || Sequencer: Blocked transition to until current transition resolves
+19-11-28 17:06:24 || Sequencer: to scene FORECAST
+19-11-28 17:06:25 || Sequencer: to scene LIGHTS
+19-11-28 17:06:27 || Sequencer: to scene FORECAST
+19-11-28 17:07:19 || Sequencer: to scene CURRENT
+19-11-28 17:07:20 || Sequencer: to scene FORECAST
+19-11-28 17:07:22 || Sequencer: to scene CURRENT
+19-11-28 17:07:24 || Sequencer: to scene FORECAST
+19-11-28 17:07:31 || Sequencer: to scene CURRENT
+19-11-28 17:07:33 || Sequencer: to scene FORECAST
+19-11-28 17:07:34 || Sequencer: to scene CURRENT
+19-11-28 17:07:36 || Sequencer: to scene FORECAST
+19-11-28 17:07:38 || Sequencer: to scene CURRENT
+19-11-28 17:07:40 || Sequencer: to scene FORECAST
+19-11-28 17:07:44 || Sequencer: to scene CURRENT
+19-11-28 17:07:46 || Sequencer: to scene FORECAST
+19-11-28 17:07:48 || Sequencer: to scene CURRENT
+19-11-28 17:07:50 || Sequencer: to scene FORECAST
+19-11-28 17:08:35 || Sequencer: to scene CURRENT
+19-11-28 17:08:36 || Sequencer: to scene FORECAST
+19-11-28 17:08:42 || Sequencer: to scene CURRENT
+19-11-28 17:08:44 || Sequencer: to scene FORECAST
+19-11-28 17:08:46 || Sequencer: to scene CURRENT
+19-11-28 17:08:47 || Sequencer: to scene FORECAST
+19-11-28 17:08:49 || Sequencer: to scene CURRENT
+19-11-28 17:08:50 || Sequencer: to scene FORECAST
+19-11-28 17:09:02 || Sequencer: to scene CURRENT
+19-11-28 17:09:03 || Sequencer: to scene FORECAST
+19-11-28 17:09:04 || Sequencer: to scene CURRENT
+19-11-28 17:09:06 || Sequencer: to scene FORECAST
+19-11-28 17:09:35 || Sequencer: to scene CURRENT
+19-11-28 17:09:36 || Sequencer: to scene FORECAST
+19-11-28 17:09:39 || Sequencer: to scene CURRENT
+19-11-28 17:09:41 || Sequencer: to scene FORECAST
+19-11-28 17:09:42 || Sequencer: to scene CURRENT
+19-11-28 17:09:44 || Sequencer: to scene FORECAST
+19-11-28 17:09:45 || Sequencer: to scene CURRENT
+19-11-28 17:09:50 || Sequencer: to scene FORECAST
+19-11-28 17:09:52 || Sequencer: to scene CURRENT
+19-11-28 17:09:54 || Sequencer: to scene FORECAST
+19-11-28 17:10:49 || Sequencer: to scene LIGHTS
+19-11-28 17:10:51 || Sequencer: to scene FORECAST
+19-11-28 17:10:52 || Sequencer: to scene CURRENT
+19-11-28 17:10:53 || Sequencer: to scene FORECAST
+19-11-28 17:10:55 || Sequencer: to scene CURRENT
+19-11-28 17:10:56 || Sequencer: to scene FORECAST
+19-11-28 17:10:57 || Sequencer: to scene CURRENT
+19-11-28 17:10:58 || Sequencer: to scene FORECAST
+19-11-28 17:11:00 || Sequencer: to scene CURRENT
+19-11-28 17:11:01 || Sequencer: to scene FORECAST
+19-11-28 17:12:05 || Sequencer: to scene CURRENT
+19-11-28 17:12:06 || Sequencer: to scene FORECAST
+19-11-28 17:12:07 || Sequencer: to scene CURRENT
+19-11-28 17:12:09 || Sequencer: to scene FORECAST
+19-11-28 17:12:10 || Sequencer: to scene CURRENT
+19-11-28 17:12:11 || Sequencer: to scene FORECAST
+19-11-28 17:12:12 || Sequencer: to scene CURRENT
+19-11-28 17:12:14 || Sequencer: to scene FORECAST
+19-11-28 17:12:29 || Sequencer: to scene CURRENT
+19-11-28 17:12:30 || Sequencer: to scene FORECAST
+19-11-28 17:12:31 || Sequencer: to scene CURRENT
+19-11-28 17:12:32 || Sequencer: to scene FORECAST
+19-11-28 17:12:33 || Sequencer: to scene CURRENT
+19-11-28 17:12:34 || Sequencer: to scene FORECAST
+19-11-28 17:12:43 || Sequencer: to scene CURRENT
+19-11-28 17:12:44 || Sequencer: to scene FORECAST
+19-11-28 17:12:45 || Sequencer: Blocked transition to until current transition resolves
+19-11-28 17:12:46 || Sequencer: to scene CURRENT
+19-11-28 17:12:48 || Sequencer: to scene FORECAST
+19-11-28 17:12:50 || Sequencer: to scene CURRENT
+19-11-28 17:12:51 || Sequencer: to scene FORECAST
+19-11-28 17:12:52 || Sequencer: to scene CURRENT
+19-11-28 17:12:53 || Sequencer: to scene FORECAST
+19-11-28 17:12:55 || Sequencer: to scene CURRENT
+19-11-28 17:12:56 || Sequencer: to scene FORECAST
+19-11-28 17:12:57 || Sequencer: to scene CURRENT
+19-11-28 17:12:58 || Sequencer: Blocked transition to until current transition resolves
+19-11-28 17:12:59 || Sequencer: to scene FORECAST
+19-11-28 17:13:31 || Sequencer: to scene CURRENT
+19-11-28 17:13:32 || Sequencer: to scene FORECAST
+19-11-28 17:13:33 || Sequencer: to scene CURRENT
+19-11-28 17:13:34 || Sequencer: to scene FORECAST
+19-11-28 17:13:35 || Sequencer: to scene CURRENT
+19-11-28 17:13:37 || Sequencer: to scene FORECAST
+19-11-28 17:13:41 || Sequencer: to scene CURRENT
+19-11-28 17:13:42 || Sequencer: to scene FORECAST
+19-11-28 17:13:43 || Sequencer: Blocked transition to until current transition resolves
+19-11-28 17:13:44 || Sequencer: to scene LIGHTS
+19-11-28 17:13:45 || Sequencer: Blocked transition to until current transition resolves
+19-11-28 17:13:46 || Sequencer: to scene FORECAST
+19-11-28 17:14:14 || Sequencer: to scene CURRENT
+19-11-28 17:14:16 || Sequencer: to scene FORECAST
+19-11-28 17:14:46 || Sequencer: to scene CURRENT
+19-11-28 17:14:47 || Sequencer: to scene FORECAST
+19-11-28 17:14:49 || Sequencer: to scene CURRENT
+19-11-28 17:14:52 || Sequencer: to scene FORECAST
+19-11-28 17:14:53 || Sequencer: to scene CURRENT
+19-11-28 17:15:05 || Sequencer: to scene FORECAST
+19-11-28 17:15:06 || Sequencer: to scene CURRENT
+19-11-28 17:15:19 || Sequencer: to scene FORECAST
+19-11-28 17:16:03 || Sequencer: to scene CURRENT
+19-11-28 17:16:04 || Sequencer: to scene FORECAST
+19-11-28 17:16:44 || Sequencer: to scene CURRENT
+19-11-28 17:16:46 || Sequencer: to scene FORECAST
+19-11-28 17:23:39 || Sequencer: to scene CURRENT
+19-11-28 17:23:53 || Sequencer: to scene FORECAST
+19-11-28 17:23:54 || Sequencer: Blocked transition to until current transition resolves
+19-11-28 17:23:55 || Sequencer: to scene LIGHTS
+19-11-28 17:23:56 || Sequencer: to scene FORECAST
+19-11-28 17:23:58 || Sequencer: to scene LIGHTS
+19-11-28 17:23:59 || Sequencer: to scene FORECAST
+19-11-28 17:25:59 || Sequencer: to scene CURRENT
+19-11-28 17:26:00 || Sequencer: to scene FORECAST
+19-11-28 17:26:01 || Sequencer: to scene CURRENT
+19-11-28 17:26:03 || Sequencer: to scene FORECAST
+19-11-28 17:27:44 || Sequencer: to scene CURRENT
+19-11-28 17:27:46 || Sequencer: to scene FORECAST
+19-11-28 17:31:04 || Sequencer: to scene CURRENT
+19-11-28 17:31:05 || Sequencer: to scene FORECAST
+19-11-28 17:34:24 || Weather: Begin Fetch process
+19-11-28 17:34:24 || Weather: Clearing Temp Assets directory
+19-11-28 17:34:24 || Weather: Fetching latest content from backend
+19-11-28 17:34:24 || Weather: Writing JSON content to disk
+19-11-28 17:34:24 || Weather: Reload
+19-11-28 17:34:32 || Weather: Reload
+19-11-28 17:34:34 || Weather: Begin Fetch process
+19-11-28 17:34:34 || Weather: Clearing Temp Assets directory
+19-11-28 17:34:34 || Weather: Fetching latest content from backend
+19-11-28 17:35:41 || Weather: Reload
+19-11-28 17:35:41 || Weather: successfully fetched data
+19-11-28 17:35:55 || Sequencer: to scene CURRENT
+19-11-28 17:35:57 || Sequencer: to scene FORECAST
+19-11-28 17:45:37 || Weather: Reload
+19-11-28 17:45:37 || Weather: successfully fetched data
+19-11-28 17:45:39 || Weather: Begin Fetch process
+19-11-28 17:45:39 || Weather: Clearing Temp Assets directory
+19-11-28 17:45:39 || Weather: Fetching latest content from backend
+19-11-28 17:45:39 || Weather: Writing JSON content to disk
+19-11-28 17:45:39 || Weather: Reload
+19-11-28 17:45:39 || Weather: successfully fetched data
+19-11-28 17:45:41 || Weather: Begin Fetch process
+19-11-28 17:45:41 || Weather: Clearing Temp Assets directory
+19-11-28 17:45:41 || Weather: Fetching latest content from backend
+19-11-28 17:45:42 || Weather: Begin Fetch process
+19-11-28 17:45:42 || Weather: Clearing Temp Assets directory
+19-11-28 17:45:42 || Weather: Fetching latest content from backend
+19-11-28 17:45:43 || Weather: Writing JSON content to disk
+19-11-28 17:45:43 || Weather: Reload
+19-11-28 17:45:43 || Weather: successfully fetched data
+19-11-28 17:45:44 || Weather: Begin Fetch process
+19-11-28 17:45:44 || Weather: Clearing Temp Assets directory
+19-11-28 17:45:44 || Weather: Fetching latest content from backend
+19-11-28 17:45:44 || Weather: Begin Fetch process
+19-11-28 17:45:44 || Weather: Clearing Temp Assets directory
+19-11-28 17:45:44 || Weather: Fetching latest content from backend
+19-11-28 17:45:44 || Weather: Writing JSON content to disk
+19-11-28 17:45:44 || Weather: Reload
+19-11-28 17:45:44 || Weather: successfully fetched data
+19-11-28 17:46:41 || Weather: Begin Fetch process
+19-11-28 17:46:41 || Weather: Clearing Temp Assets directory
+19-11-28 17:46:41 || Weather: Fetching latest content from backend
+19-11-28 17:46:41 || Weather: Writing JSON content to disk
+19-11-28 17:46:41 || Weather: Reload
+19-11-28 17:46:42 || Weather: successfully fetched data
+19-11-28 17:46:44 || Weather: successfully fetched data
+19-11-28 17:47:38 || Weather: Begin Fetch process
+19-11-28 17:47:38 || Weather: Clearing Temp Assets directory
+19-11-28 17:47:38 || Weather: Fetching latest content from backend
+19-11-28 17:47:59 || Sequencer: to scene LIGHTS
+19-11-28 17:48:00 || Sequencer: Blocked transition to until current transition resolves
+19-11-28 17:48:06 || Sequencer: to scene FORECAST
+19-11-28 17:48:07 || Sequencer: to scene CURRENT
+19-11-28 17:48:09 || Sequencer: to scene FORECAST
+19-11-28 17:48:10 || Sequencer: to scene CURRENT
+19-11-28 17:48:11 || Sequencer: to scene FORECAST
+19-11-28 17:48:12 || Sequencer: to scene CURRENT
+19-11-28 17:48:13 || Sequencer: to scene FORECAST
+19-11-28 17:48:51 || Sequencer: to scene CURRENT

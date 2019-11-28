@@ -18,7 +18,7 @@ import * as weather from './../components/weather'
 // INIT on app startup
 export const build = ( http_server ) => {
 
-	console.log('✨  Building state')
+	console.log('✨  building state')
 
 	sockets.listen( http_server )
 

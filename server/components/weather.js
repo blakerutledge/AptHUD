@@ -110,9 +110,15 @@ let filter_current = ( response ) => {
 
 let filter_hourly = ( response ) => {
 
-	let output = []
-	
+	let output = []	
 	let offset = 0
+
+	/*
+
+	// DarkSky changed their API so now the array of hourly data
+	// no longer includes hours that have passed yet were still "today"
+	// so we dont need to manually calculate an offset to get the "next"
+	// 24 hours. its simply the first 24 items in the hourly array
 
 	let d = new Date( response.currently.time )
 	for ( let i=0; i<24; i++ ) {
@@ -122,6 +128,8 @@ let filter_hourly = ( response ) => {
 			offset = i
 		}
 	}
+
+	*/
 
 	for ( let i=0; i<24; i++ ) {
 		
