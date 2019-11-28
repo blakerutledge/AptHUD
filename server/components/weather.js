@@ -54,7 +54,7 @@ let fetch_weather = () => {
 			}
 			else {
 				// var _path = path.join( __dirname, '..', '..', 'data', 'weather.json' )
-				var path = path.join( './../../visualization/assets/dev-content/weather.json' )
+				var _path = path.join( './../../visualization/assets/dev-content/weather.json' )
 				jsonfile.writeFile( _path, filtered, 'utf8', () => {
 					console.log( '💾  wrote weather data to disk' )
 					data = filtered

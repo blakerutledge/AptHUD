@@ -14,7 +14,7 @@ export let listen = ( http_server ) => {
 
 	io = socketio( http_server )
 
-	console.log( '⚡️  ' + process.env.NODE_ENV + ' socket server ready' )
+	console.log( '⚡️  ' + process.env.ENV + ' socket server ready' )
 
 
 	io.on('connection', ( socket ) => {
