@@ -21,3 +21,5 @@ hudDate	assets/fonts/roboto/roboto_mono_regular.ttf	52	-0.65	-2.0
 hudCurrentLabel	assets/fonts/roboto/roboto_mono_regular.ttf	34	-0.65	-2.0		
 hudCurrentValue	assets/fonts/roboto/roboto_mono_regular.ttf	52	-0.65	-2.0		
 hudIcon	assets/fonts/weather/weathericons-regular-webfont.ttf	140	0.0	0.0	0.0	
+hudIconSmall	assets/fonts/weather/weathericons-regular-webfont.ttf	42	0.0	0.0	0.0	
+hudHourlyValue	assets/fonts/roboto/roboto_mono_regular.ttf	22	-1.0	-2.0		
