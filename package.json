@@ -44,6 +44,7 @@
     "morgan": "^1.9.1",
     "nedb": "*",
     "nodemon": "*",
+    "per-env": "git+https://github.com/blakerutledge/per-env",
     "request": "^2.88.0",
     "serve-favicon": "*",
     "socket.io": "*",
