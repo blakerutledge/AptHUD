@@ -24,7 +24,7 @@ import * as controller from './controller'
 
 let app = express()
 
-app.use( compression() )		// Use gzip compression
+// app.use( compression() )		// Use gzip compression
 app.use( cors() )				// Allow CORS
 app.use( logger('dev') )		// Debug
 

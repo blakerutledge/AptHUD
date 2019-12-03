@@ -13,16 +13,18 @@ import * as weather from './../components/weather'
 
 let router = express.Router()
 
-router.use( cors() )
+// router.use( cors() )
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ROUTES
 
-router.get( '/api/weather', ( req, res ) => {
+router.post( '/api/weather', ( req, res ) => {
 	weather.api.default( req, res )
 })
 
-
+router.get( '/api/weather', ( req, res ) => {
+	weather.api.default( req, res )
+})
 
 /*
 

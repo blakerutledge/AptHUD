@@ -32,7 +32,7 @@ let fetch_weather = () => {
 
 		let filtered = filter( body )
 
-		var _path = path.join( __dirname, '..', '..', 'data', 'weather.json' )
+		let _path = path.join( __dirname, '..', '..', 'data', 'weather.json' )
 
 		jsonfile.writeFile( _path, filtered, 'utf8', () => {
 			console.log( '💾  wrote weather data to disk' )
@@ -44,17 +44,32 @@ let fetch_weather = () => {
 
 		console.log( '🌤  requesting current weather data' )
 
-		request( 'https://api.darksky.net/forecast/' + process.env.DARKSKY_SECRET_KEY + '/40.7133,-73.9509/', ( error, response, body ) => {
+		request( 'https://api.darksky.net/forecast/' + process.env.DARKSKY_SECRET_KEY + '/' + process.env.LOCATION_LAT + ',' + process.env.LOCATION_LON, ( error, response, body ) => {
 
-			let filtered = filter( JSON.parse( body ) )
+			if ( error || body == undefined ) {
 
-			if ( error ) {
 				console.log( '🚫  error fetching and storing weather data' )
 				console.log( error )
+
+				let _path = path.join( __dirname, '..', '..', 'data', 'weather.json' )
+				jsonfile.readFile( _path, ( err, cached_data ) => {
+					
+					if ( err ) {
+						console.log( err )
+					}
+					else {
+						data = cached_data
+						console.log( '💾  serving data from cache' )
+					}
+
+				} )
+
 			}
 			else {
-				var _path = path.join( __dirname, '..', '..', 'data', 'weather.json' )
-				// var _path = path.join( './../../visualization/assets/dev-content/weather.json' )
+
+				let filtered = filter( JSON.parse( body ) )
+				let _path = path.join( __dirname, '..', '..', 'data', 'weather.json' )
+
 				jsonfile.writeFile( _path, filtered, 'utf8', () => {
 					console.log( '💾  wrote weather data to disk' )
 					data = filtered
@@ -79,6 +94,10 @@ let fetch_weather = () => {
 let filter = ( body ) => {
 
 	let obj = {
+		meta: { 
+			time: body.currently.time,
+			date_str: new Date( body.currently.time ).toUTCString()
+		},
 		current: filter_current( body ),
 		hourly: filter_hourly( body ),
 		forecast: filter_forecast( body ),
@@ -93,7 +112,7 @@ let filter_current = ( response ) => {
 
 	let output = {}
 
-	var c = 				response.currently
+	let c = 				response.currently
 
 	output.icon = 			icons.convert( "wi-" + c.icon )
 	output.temp = 			Math.round( c.temperature )
@@ -157,7 +176,7 @@ let filter_forecast = (response ) => {
 
 	response.daily.data.forEach( ( x, i ) => {
 
-		var d = new Date( x.time * 1000 )
+		let d = new Date( x.time * 1000 )
 
 		output.push( {
 			day: 		days[ d.getDay() ][ 0 ],
