@@ -13,7 +13,7 @@ import * as weather from './../components/weather'
 
 let router = express.Router()
 
-// router.use( cors() )
+router.use( cors() )
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ROUTES
