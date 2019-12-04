@@ -1,6 +1,10 @@
 {	
 
-	"HELLO": "World!",
-	"STATIC": "Content here"	
+	"HELLO": {
+		"PROP1": "World!"
+	},
+	"STATIC": {
+		"PROP2": "Content here"	
+	}
 
 }
