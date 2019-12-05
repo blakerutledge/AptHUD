@@ -15,4 +15,7 @@
 dist/**/*
 data/**/*
 
+visual/screen_recordings/**/*
+visual/working/**/*
+
 !**/*/.gitkeep

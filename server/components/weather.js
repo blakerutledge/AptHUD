@@ -96,7 +96,8 @@ let filter = ( body ) => {
 	let obj = {
 		meta: { 
 			time: body.currently.time,
-			date_str: new Date( body.currently.time ).toUTCString()
+			date_str: new Date( body.currently.time ).toUTCString(),
+			timezone: body.timezone
 		},
 		current: filter_current( body ),
 		hourly: filter_hourly( body ),
@@ -156,7 +157,7 @@ let filter_hourly = ( response ) => {
 		let dd = new Date( x.time * 1000 )
 
 		output.push( {
-			hour: 		dd.getHours(),
+			time: 		x.time,
 			icon: 		icons.convert( "wi-" + x.icon ),
 			temp: 		Math.round( x.temperature ),
 			wind: 		Math.round( x.windSpeed ),
