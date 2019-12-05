@@ -19,7 +19,8 @@ class triggers:
 
 	def Check( self ):
 
-		op('web1').par.fetch.pulse()
+		op('web1').par.clear.pulse()
+		op('web1').par.request.pulse()
 
 		return
 	
