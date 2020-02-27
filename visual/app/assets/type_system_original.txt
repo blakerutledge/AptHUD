@@ -25,3 +25,5 @@ hudIcon	assets/fonts/weather/weathericons-regular-webfont.ttf	140	0.0	0.0	0.0
 hudIconSmall	assets/fonts/weather/weathericons-regular-webfont.ttf	42	0.0	0.0	0.0	
 hudHourlyValue	assets/fonts/roboto/roboto_mono_regular.ttf	22	-1.0	-2.0		
 hudMetaLabel	assets/fonts/roboto/roboto_mono_regular.ttf	16	-1.0	-2.0		
+hudTrainLabel	assets/fonts/roboto/roboto_mono_regular.ttf	22	-1.0	-2.0		
+hudTrainValue	assets/fonts/roboto/roboto_mono_regular.ttf	32	-1.0	-2.0		
