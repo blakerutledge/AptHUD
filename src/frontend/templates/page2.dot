@@ -1,0 +1,9 @@
+<div class="section page2">
+
+	<h1> Page 2 </h1>
+
+	<div class="link" data-link="page1"> page 1 </div>
+
+	<div class="link" data-link="home"> home </div>
+
+</div>

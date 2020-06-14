@@ -1,0 +1,11 @@
+<div class="section home">
+
+	<h1> Home </h1>
+
+	<div class="link" data-link="page1"> page 1 </div>
+
+	<div class="link" data-link="page2"> page 2 </div>
+
+	<div class="link" data-external="https://google.com"> external link </div>
+
+</div>

@@ -1,21 +1,16 @@
 **/.DS_Store
 **/node_modules/**/*
 
-**/*yarn-error.log
-**/*npm-debug.log
-**/*nohup.out
+**/yarn-error.log
+**/npm-debug.log
+**/nohup.out
 
-**/.log
+.cache/**/*
 
 .env
 
-.sublime-project
-.sublime-project.sublime-workspace
-
 dist/**/*
 data/**/*
+logs/**/*
 
-visual/screen_recordings/**/*
-visual/working/**/*
-
-!**/*/.gitkeep
+!**/.gitkeep

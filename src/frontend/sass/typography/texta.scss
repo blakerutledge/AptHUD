@@ -1,0 +1,79 @@
+// - - - Texta Narrow - - - //
+
+/*
+
+BLACK        -   900
+HEAVY        -   800
+BOLD         -   700
+MEDIUM       -   600
+REGULAR      -   500
+BOOK         -   400
+LIGHT        -   300
+THIN         -   200
+
+*/
+
+@font-face {
+    font-family: 'texta';
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-black-webfont.eot');
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-black-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/texta/latinotype_-_textanarrow-black-webfont.woff2') format('woff2'), url('/assets/fonts/texta/latinotype_-_textanarrow-black-webfont.woff') format('woff'), url('/assets/fonts/texta/latinotype_-_textanarrow-black-webfont.ttf') format('truetype'), url('/assets/fonts/texta/latinotype_-_textanarrow-black-webfont.svg#texta_narrowblack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'texta';
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-heavy-webfont.eot');
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-heavy-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/texta/latinotype_-_textanarrow-heavy-webfont.woff2') format('woff2'), url('/assets/fonts/texta/latinotype_-_textanarrow-heavy-webfont.woff') format('woff'), url('/assets/fonts/texta/latinotype_-_textanarrow-heavy-webfont.ttf') format('truetype'), url('/assets/fonts/texta/latinotype_-_textanarrow-heavy-webfont.svg#texta_narrowheavy') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'texta';
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-bold-webfont.eot');
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/texta/latinotype_-_textanarrow-bold-webfont.woff2') format('woff2'), url('/assets/fonts/texta/latinotype_-_textanarrow-bold-webfont.woff') format('woff'), url('/assets/fonts/texta/latinotype_-_textanarrow-bold-webfont.ttf') format('truetype'), url('/assets/fonts/texta/latinotype_-_textanarrow-bold-webfont.svg#texta_narrowbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'texta';
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-medium-webfont.eot');
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-medium-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/texta/latinotype_-_textanarrow-medium-webfont.woff2') format('woff2'), url('/assets/fonts/texta/latinotype_-_textanarrow-medium-webfont.woff') format('woff'), url('/assets/fonts/texta/latinotype_-_textanarrow-medium-webfont.ttf') format('truetype'), url('/assets/fonts/texta/latinotype_-_textanarrow-medium-webfont.svg#texta_narrowmedium') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'texta';
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-regular-webfont.eot');
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/texta/latinotype_-_textanarrow-regular-webfont.woff') format('woff'), url('/assets/fonts/texta/latinotype_-_textanarrow-regular-webfont.ttf') format('truetype'), url('/assets/fonts/texta/latinotype_-_textanarrow-regular-webfont.svg#texta_narrowregular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'texta';
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-book-webfont.eot');
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-book-webfont.woff') format('woff'), url('/assets/fonts/texta/latinotype_-_textanarrow-book-webfont.ttf') format('truetype'), url('/assets/fonts/texta/latinotype_-_textanarrow-book-webfont.svg#texta_narrowbook') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'texta';
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-light-webfont.eot');
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-light-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/texta/latinotype_-_textanarrow-light-webfont.woff2') format('woff2'), url('/assets/fonts/texta/latinotype_-_textanarrow-light-webfont.woff') format('woff'), url('/assets/fonts/texta/latinotype_-_textanarrow-light-webfont.ttf') format('truetype'), url('/assets/fonts/texta/latinotype_-_textanarrow-light-webfont.svg#texta_narrowlight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'texta';
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-thin-webfont.eot');
+    src: url('/assets/fonts/texta/latinotype_-_textanarrow-thin-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/texta/latinotype_-_textanarrow-thin-webfont.woff2') format('woff2'), url('/assets/fonts/texta/latinotype_-_textanarrow-thin-webfont.woff') format('woff'), url('/assets/fonts/texta/latinotype_-_textanarrow-thin-webfont.ttf') format('truetype'), url('/assets/fonts/texta/latinotype_-_textanarrow-thin-webfont.svg#texta_narrowthin') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}

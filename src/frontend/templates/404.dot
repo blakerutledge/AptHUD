@@ -1,0 +1,7 @@
+<div> {{= it.title }} </div>
+<div> Uh oh - - that's a 404 </div>
+<div>
+
+    <a class="internal-link" data-link="home"> go home </a>
+
+</div>
